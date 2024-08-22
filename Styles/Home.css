@@ -1,0 +1,179 @@
+.mainHomePageBlog {
+    padding: 10px 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100vw;
+    height: auto;
+}
+
+.mainHomePageBlog h3 {
+    font-size: 60px;
+    text-align: center;
+    color: #3d3d3d;
+    font-weight: lighter;
+    letter-spacing: 10px;
+    margin-top: 20px;
+}
+
+.mainHomePageBlog p {
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: gray;
+    font-size: 19px;
+    margin: 3px 0;
+}
+
+.mainHomePageBlog h4 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: #3d3d3d;
+}
+
+.mainHomePageBlog img {
+    margin-top: 17px;
+    margin-bottom: 22px;
+    width: 350px;
+    height: 550px;
+}
+
+.mainHomePageBlog h5 {
+    font-size: 30px;
+    color: #3d3d3d;
+    font-weight: lighter;
+}
+
+.mainHomePageBlog footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 14px;
+}
+
+.mainHomePageBlog footer article {
+    font-size: 25px;
+    font-weight: bold;
+    color: #4c4c4c;
+    margin: 2px;
+}
+
+.mainHomePageBlog footer h5 {
+    color: red;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.mainHomePageBlog footer h6 a {
+    color: #1677aa;
+    cursor: pointer;
+}
+
+.mainHomePageBlog footer p {
+    font-size: 22px;
+    color: gray;
+    margin-top: 4px;
+    font-weight: lighter;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+
+    /* Tablet */
+    .mainHomePageBlog {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainHomePageBlog h3 {
+        font-size: 40px;
+        letter-spacing: 5px;
+        margin-top: 10px;
+    }
+
+    .mainHomePageBlog p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .mainHomePageBlog h4 {
+        font-size: 30px;
+    }
+
+    .mainHomePageBlog img {
+        width: 300px;
+        height: 450px;
+    }
+
+    .mainHomePageBlog h5 {
+        font-size: 24px;
+    }
+
+    .mainHomePageBlog footer article {
+        font-size: 20px;
+    }
+
+    .mainHomePageBlog footer h5 {
+        font-size: 15px;
+    }
+
+    .mainHomePageBlog footer p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Mobile */
+    .mainHomePageBlog {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainHomePageBlog h3 {
+        font-size: 30px;
+        letter-spacing: 2px;
+        margin-top: 5px;
+    }
+
+    .mainHomePageBlog p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .mainHomePageBlog h4 {
+        font-size: 24px;
+    }
+
+    .mainHomePageBlog img {
+        width: 250px;
+        height: 375px;
+    }
+
+    .mainHomePageBlog h5 {
+        font-size: 20px;
+    }
+
+    .mainHomePageBlog footer article {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .mainHomePageBlog footer h5 {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .mainHomePageBlog h6 {
+        text-align: center;
+    }
+
+    .mainHomePageBlog footer p {
+        font-size: 16px;
+    }
+}

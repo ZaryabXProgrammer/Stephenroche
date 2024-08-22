@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- PhotoSwipe CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+
+    <!-- PhotoSwipe UI CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/default-skin/default-skin.css">
+
+    <!-- PhotoSwipe JS -->
+    <script src="https://unpkg.com/photoswipe@5/dist/photoswipe.min.js"></script>
+
+    <!-- PhotoSwipe UI JS -->
+    <script src="https://unpkg.com/photoswipe@5/dist/photoswipe-ui-default.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Tell - Book & Movie | Stephen Roche</title>
+    <link href="public/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/DontTell.css">
+    <link rel="stylesheet" href="./Styles/Global.css">
+
+</head>
+
+<body>
+    <nav
+        class="navbar top-0 left-0 overflow-hidden w-screen h-[180px] bg-black bg-[url('https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/img_1004_photo-1-1--2880w.jpg')] bg-cover bg-center flex justify-between p-4 z-10 relative">
+        <!-- Tint Overlay -->
+        <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+
+        <div class="navLeft text-white lg:flex hidden items-center flex-1 flex-row gap-3 justify-center relative z-10">
+            <a href="DontTell.html#DontTellSection" rel="noopener noreferrer">
+                <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-book-cover-345x500px-156h.png"
+                    class="w-[89px]" alt="Book Cover">
+            </a>
+            <a href="DontTell.html#theMovie" rel="noopener noreferrer">
+                <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-the-movie-1920w.png"
+                    class="w-[89px]" alt="Movie Cover">
+            </a>
+            <a href="rightside.html" rel="noopener noreferrer">
+                <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/right-side-of-wrong-1-1-1--1920w.png"
+                    class="w-[89px]" alt="Right Side Cover">
+            </a>
+        </div>
+
+        <div class="navRight w-full lg:block hidden text-white flex-2 mt-4 relative z-10">
+            <ul class="flex flex-row gap-4 items-center cursor-pointer justify-center">
+                <li id="home-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="index.html" class="block px-0 py-2">HOME</a>
+                </li>
+                <li id="about-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="/about.html" class="block px-0 py-2">ABOUT</a>
+                </li>
+                <li id="dont-tell-link"
+                    class="relative text-[17px] text-gray-400 group transition-colors duration-300 ease">
+                    <a href="DontTell.html" class="block px-3 py-1">DON'T TELL</a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 bg-white text-gray-400 hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#DontTellSection" class="block text-[19px]">THE BOOK</a>
+                        </li>
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#theMovie" class="block">THE MOVIE</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="right-side-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="rightside.html" class="block px-0 py-2">THE RIGHT SIDE OF THE WRONG</a>
+                </li>
+                <li id="contact-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="contactus.html" class="block px-0 py-2">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-50 backdrop-blur-lg text-black flex flex-col items-center justify-center lg:hidden hidden z-10 animate-fadeRight">
+            <ul class="flex flex-col gap-4">
+                <li class="text-[17px] font-semibold">
+                    <a href="index.html" class="block px-4 py-2 text-black">HOME</a>
+                </li>
+                <li class="text-[17px] font-semibold">
+                    <a href="/about.html" class="block px-4 py-2 text-black">ABOUT</a>
+                </li>
+                <li class="relative text-[17px] font-semibold">
+                    <a href="DontTell.html" class="block px-4 py-2 text-black">DON'T TELL</a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 bg-white hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#DontTellSection"
+                                class="block text-[19px] text-black font-semibold">THE
+                                BOOK</a>
+                        </li>
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#theMovie" class="block text-black font-semibold">THE MOVIE</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="text-[17px] font-semibold">
+                    <a href="rightside.html" class="block px-4 py-2 text-black">THE RIGHT SIDE OF THE WRONG</a>
+                </li>
+                <li class="text-[17px] font-semibold">
+                    <a href="contactus.html" class="block px-4 py-2 text-black">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="mobile-menu-icon" class="lg:hidden flex items-center z-20 cursor-pointer">
+            <img id="menu-icon" src="https://img.icons8.com/?size=100&id=120374&format=png&color=FFFFFF" alt="Menu Icon"
+                class="w-8 h-8" />
+        </div>
+
+    </nav>
+
+
+
+    <header class="topContainer">
+
+
+
+        <section class="DontTellSection flex flex-col gap-5 sm:gap-7 items-center" id="DontTellSection">
+            <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-thin tracking-widest text-[#4c4c4c] text-center">DON'T
+                TELL
+            </h1>
+            <h3 class="text-2xl sm:text-3xl lg:text-4xl text-[#4c4c4c] tracking-wider font-thin text-center">THE BOOK
+            </h3>
+
+            <article class="mb-6 sm:mb-8 lg:mb-10">
+                <div
+                    class="py-6 sm:py-8 lg:py-10 px-4 sm:px-6 md:px-8 lg:px-9 bg-[#ececec] flex flex-col sm:flex-row gap-4 sm:gap-5">
+                    <!-- Add data-pswp-width and data-pswp-height attributes for image dimensions -->
+                    <a href="./Assets/DontTell/dontellbook.webp" data-pswp-width="1200" data-pswp-height="1600"
+                        target="_blank" class="pswp-gallery-item">
+                        <img class="w-[160px] h-[200px] sm:w-[200px] sm:h-[250px] md:w-[240px] md:h-[300px]"
+                            src="./Assets/DontTell/dontellbook.webp" alt="">
+                    </a>
+                    <a href="./Assets/DontTell/paper-clipping_photo.webp" data-pswp-width="1200" data-pswp-height="1600"
+                        target="_blank" class="pswp-gallery-item">
+                        <img class="w-[160px] h-[200px] sm:w-[200px] sm:h-[250px] md:w-[240px] md:h-[300px]"
+                            src="./Assets/DontTell/paper-clipping_photo.webp" alt="">
+                    </a>
+                </div>
+            </article>
+        </section>
+
+
+        <aside class="DontTextBoxOne">
+
+            <header>
+                <p>Stephen Roche has fought a lot of legal battles in his time. As the co-founder of one of Australia’s
+                    largest
+                    and most
+                    successful plaintiff litigation firms, he’s been up against everyone from McDonalds to governments
+                    and
+                    Churches. But
+                    it was Lyndal’s case which occurred in his own home town of Toowoomba, that really had an impact on
+                    him.
+                    And
+                    it
+                    would be Lyndal’s case that would change him forever.</p>
+                <p>Don’t Tell gives a voice to everyone who has ever suffered guilt and shame as a result of being
+                    abused or
+                    from
+                    failing to prevent their child being abused. Stephen’s message to those people is that you have
+                    nothing
+                    to
+                    be
+                    ashamed of. It is the institutions that need to answer for their actions. It is the institutions and
+                    the
+                    people that
+                    run them, who need to be sorry, to feel remorse, to find the courage to make a change.</p>
+                <p>When Stephen first met Lyndal back in 2000, she had lost all hope. Many have lost hope in their
+                    elders,
+                    in
+                    their
+                    schools, their churches, their legal systems. Don’t Tell is a reminder that justice can and
+                    sometimes
+                    does
+                    prevail.
+                    To those who have lost the will to fight, or do not know where to turn, Stephen hopes that Don’t
+                    Tell
+                    will
+                    show them
+                    that where there is a will, there is a way. And sometimes standing up and using your voice and being
+                    heard –
+                    is the
+                    only way.</p>
+                <p>Our legal system can be a powerful vehicle for all of us seeking justice. And it is precious. There
+                    is
+                    much
+                    criticism
+                    of our justice system, our judges and the legal profession (much of it justified) but there are too
+                    few
+                    defending
+                    it. Lyndal used the legal system to expose an institution guilty of reckless behaviour. In this way,
+                    the
+                    law
+                    can be
+                    a catalyst for positive social change.</p>
+                <p>Since writing the book and making the movie, many more survivors of abuse have come forward and told
+                    their
+                    story. New
+                    systems and protocols exist in our public and private schools to reduce the risk of harm to our
+                    children.
+                    There has
+                    been a Royal Commission. The Government has taken action to promote child abuse awareness and as a
+                    community
+                    we have
+                    banded together to shine a light on other institutions that need to be held accountable in order to
+                    do
+                    better. Yet
+                    our rights as individuals are slowly being eroded by our legislators, our politicians and
+                    bureaucrats –
+                    heavily
+                    influenced by the lobbying power of the insurance industry.</p>
+                <p>Change can and will happen. Through the making of the movie Don’t Tell, Stephen and Lyndal hope to
+                    inspire
+                    that
+                    change.</p>
+            </header>
+
+
+
+
+
+            <footer>
+                <h3>Synopsis
+                </h3>
+
+                <p>Told through the eyes of a lawyer, Stephen Roche, this is a compelling account of the most important
+                    sexual abuse
+                    civil trial in Australian history.</p>
+                <p>It begins when a young girl’s life is torn apart while attending a prestigious Anglican Preparatory
+                    School, suffering
+                    repeated sexual abuse at the hands of her Boarding Master. After a complaint by a fellow classmate
+                    the
+                    man is
+                    charged. On the day he is to appear in court, he commits suicide.</p>
+                <p>For the next 11 years the School and Church deny the abuse ever occurred and it seems as if Lyndal’s
+                    life
+                    will remain
+                    in ruins – her cries for help forever falling on deaf ears. It is not until she is twenty-one that
+                    her
+                    story is
+                    finally told in court, exposing the dark face of the Church and a shocking history of
+                    institutionalised
+                    denial and
+                    neglect.</p>
+                <p>Lyndal’s story evokes a feeling of anger, outrage and the landmark legal decision brings contempt for
+                    the
+                    powers that
+                    be and the highest office in the country to its knees and forever changes Australian attitudes
+                    towards
+                    abuse.</p>
+
+
+            </footer>
+
+
+
+
+
+
+        </aside>
+
+
+        <main class="flex flex-col justify-start items-center lg:items-start mt-9 gap-5 sm:gap-6 md:gap-7 lg:gap-8">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wide text-gray-700">
+                Grab your copy today!
+            </h1>
+
+            <span class="w-[22rem] sm:w-[20rem] md:w-[18rem] lg:w-[22rem] flex flex-col gap-3">
+                <img class="w-full" src="./Assets/DontTell/dontellbook.webp" alt="">
+
+                <button class="text-white w-full sm:w-[16rem] md:w-[18rem] lg:w-[347px] bg-black border-none p-5">
+                    BUY THE BOOK
+                </button>
+
+                <p class="text-base sm:text-lg md:text-xl text-gray-500">
+                    Please <a class="text-blue-300" href="contactus.html">contact us for overseas orders</a>.
+                </p>
+            </span>
+        </main>
+
+
+
+        <aside class="flex flex-col gap-3 mt-7">
+            <h1 class="text-2xl sm:text-3xl tracking-wider font-bold text-gray-600">
+                Purchase The eBook
+            </h1>
+
+            <article class="flex flex-col sm:flex-row gap-4 sm:gap-2 items-center">
+                <a href="https://www.kobo.com/au/en/ebook/don-t-tell-16" target="_blank">
+                    <img class="w-[18rem] sm:w-[20rem] md:w-[22rem] transition hover:opacity-60"
+                        src="https://images.squarespace-cdn.com/content/v1/62b6119676cb41213adaeec9/ef7e6d60-7c1b-4208-8eba-c8f6221aea13/Kobo.png"
+                        alt="">
+                </a>
+                <a href="https://www.amazon.com/dp/B072FFZDLL" target="_blank">
+                    <img class="w-[19rem] sm:w-[21rem] md:w-[23rem] transition hover:opacity-60"
+                        src="./Assets/DontTell/kindle.png" alt="">
+                </a>
+                <a href="https://books.apple.com/us/book/dont-tell/id1236645830" target="_blank">
+                    <img class="w-[15rem] sm:w-[17rem] md:w-[19rem] h-[6rem] sm:h-[7rem] transition hover:opacity-60"
+                        src="./Assets/DontTell/applebooks.webp" alt="">
+                </a>
+            </article>
+        </aside>
+
+
+    </header>
+
+
+
+    <section class="theMovie" id="theMovie">
+
+        <h1 class="text-4xl sm:text-3xl md:text-4xl tracking-widest text-center mt-10">
+            THE MOVIE
+        </h1>
+
+        <aside class="flex flex-col flex-wrap sm:flex-row gap-5 items-center justify-center mt-8">
+            <img class="w-[18rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
+                src="./Assets/DontTell/TheMovie/toppic1.webp" alt="">
+            <img class="w-[18rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
+                src="./Assets/DontTell/TheMovie/toppic2.webp" alt="">
+            <img class="w-[18rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
+                src="./Assets/DontTell/TheMovie/toppic3.webp" alt="">
+            <img class="w-[18rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
+                src="./Assets/DontTell/TheMovie/toppic4.webp" alt="">
+            <img class="w-[18rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
+                src="./Assets/DontTell/TheMovie/toppic5.webp" alt="">
+        </aside>
+
+        <img class="w-full mt-8" src="./Assets/DontTell/TheMovie/coverpic.webp" alt="">
+
+
+        <aside class="lowerTextBox">
+
+            <p>A true story of how a young girl exposed the perpetrators of her sexual abuse and brought the Anglican
+                Church to its
+                knees.</p>
+            <p>Don't Tell (Movie) is on <a href="https://www.facebook.com/DontTellMovie/"> Facebook</a> and check it out
+                on <a href="">IMDB</a>.</p>
+            <p>Starring Jack Thompson, Aden Young, Sara West (as Lyndal), Jacqueline McKenzie, Gyton Grantley, Susie
+                Porter, Martin
+                Sacks and Kim Knuckey as Archbishop Peter Hollingsworth with Rachel Griffiths and Robert Taylor.</p>
+            <p>Adapted from the book ‘Don’t Tell’ written by Stephen Roche, Don't Tell (the movie) is due for release in
+                2017.</p>
+            <p>Director: Tori Garrett.</p>
+            <p>Producer: Scott Corfield.</p>
+            <p>Don’t Tell is based on a book written by Stephen Roche about his experience representing a young woman
+                who was
+                sexually abused while attending a prestigious Anglican boarding school.</p>
+            <p>Young Lyndal’s damning claims were repeatedly refuted when she spoke out about repeated abuse inflicted
+                by the
+                boarding master. Following another complaint by a fellow classmate the man is charged but takes his own
+                life on the
+                morning of his court appearance. For the next eleven years Lyndal’s cries fall on deaf ears. It is not
+                until she is
+                21 years old that she meets local lawyer Stephen Roche and together, they reignite the damning evidence
+                that will
+                finally set Lyndal free.</p>
+            <p>Don’t Tell is a heart-rending story about a young woman’s pursuit of justice, the belief of her lawyers,
+                and a
+                landmark court decision that would forever change the way we view claims of institutional abuse.</p>
+
+        </aside>
+
+
+        <aside class="w-full h-full p-4">
+            <h1 class="text-3xl tracking-widest text-start pb-5">TRAILER</h1>
+            <iframe class="w-full h-[11rem] lg:h-[650px] md:h-[500px] sm:h-[400px] rounded-lg"
+                src="https://www.youtube.com/embed/WecawXk2vkw" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </aside>
+
+
+        <article class="flex flex-col gap-4 p-4 w-full">
+            <div class="flex flex-col gap-3">
+                <h1 class="text-3xl tracking-widest text-start pb-5">Available to Stream</h1>
+                <span class="flex flex-wrap gap-2 justify-center lg:flex-row flex-col items-center">
+                    <a href="https://tv.apple.com/au/movie/dont-tell/umc.cmc.l1etelomojw3rchn00sv3osh" target="_blank">
+                        <img class="w-[18rem] lg:w-[18rem] sm:w-[10rem] transition hover:opacity-70"
+                            src="./Assets/DontTell/GetFrom/itunes.svg" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=4m6biDQmWvI&feature=youtu.be" target="_blank">
+                        <img class="w-[18rem] lg:w-[18rem] sm:w-[14rem] transition hover:opacity-70"
+                            src="./Assets/DontTell/GetFrom/googletv.png" alt="">
+                    </a>
+                    <a href="https://play.google.com/store/movies/details/Don_t_Tell?id=4m6biDQmWvI&pli=1"
+                        target="_blank">
+                        <img class="w-[18rem] lg:w-[18rem] sm:w-[14rem] transition hover:opacity-70"
+                            src="./Assets/DontTell/GetFrom/googleplay.png" alt="">
+                    </a>
+                    <a href="https://www.fetchtv.com.au/movie/details/513589" target="_blank">
+                        <img class="w-[17rem] lg:w-[18rem] sm:w-[13rem] transition hover:opacity-70"
+                            src="./Assets/DontTell/GetFrom/fetch.png" alt="">
+                    </a>
+                </span>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <h1 class="text-3xl tracking-widest text-start pb-5">& on DVD!</h1>
+                <p class="text-gray-600 text-[19px]">Buy the Don't Tell DVD at your favourite retailers.</p>
+                <aside class="flex flex-col sm:flex-row items-start gap-4 w-full">
+                    <img class="w-[12rem] sm:w-[10rem]" src="./Assets/DontTell/GetFrom/bookblue.webp" alt="">
+                    <article class="flex flex-col gap-2">
+                        <h1 class="text-2xl font-bold tracking-widest mb-2">"compelling & heartfelt" - 4 stars</h1>
+                        <p class="text-[19px] tracking-wider mb-4">Paul Byrnes: Sydney Morning Herald</p>
+                        <h1 class="text-2xl font-bold mb-2 tracking-widest">"beautifully made" - 4 stars</h1>
+                        <p class="text-[19px] tracking-wider mb-4">David Stratton: The Australian</p>
+                    </article>
+                </aside>
+            </div>
+        </article>
+
+
+    </section>
+
+
+
+
+
+
+<footer
+    class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row h-auto lg:h-[24vh] w-screen items-center justify-between py-7 mt-1">
+    <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center lg:text-left">
+        © 2024 Stephen Roche
+    </article>
+
+    <article
+        class="Footercenter flex-1 flex flex-col lg:flex-row gap-3 lg:gap-6 justify-center lg:justify-center items-center lg:items-center mt-4 lg:mt-0">
+        <a class="text-blue-400 text-base lg:text-xl" href="/PrivacyPolicy.html">Privacy Policy</a>
+        <a href="#" class="text-blue-400 text-base lg:text-xl">Website by Indigo Web</a>
+    </article>
+
+    <article
+        class="FooterRight flex-1 flex flex-col lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
+        <span class="flex flex-col gap-2 justify-center items-center p-1">
+            Book <a href="https://www.facebook.com/dont.tell.book">
+                <img class="w-[30px] lg:w-[35px]"
+                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+            </a>
+        </span>
+
+        <span class="flex flex-col gap-2 justify-center items-center p-1">
+            Movie <a href="https://www.facebook.com/DontTellMovie">
+                <img class="w-[30px] lg:w-[35px]"
+                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+            </a>
+        </span>
+
+        <span class="flex flex-col gap-2 justify-center items-center p-1">
+            Stephen <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
+                <img class="w-[30px] lg:w-[35px]"
+                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+            </a>
+        </span>
+    </article>
+</footer>
+
+
+
+
+    <script src="./Javascript/index.js"></script>
+</body>
+
+</html>

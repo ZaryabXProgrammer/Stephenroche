@@ -1,0 +1,40 @@
+.lowerBoxRightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lowerBoxRightSide p {
+    font-size: 17px;
+    color: gray;
+    margin: 2px 0;
+}
+
+.lowerBoxRightSide h3 {
+    text-align: start;
+    font-size: 40px;
+    font-weight: lighter;
+    letter-spacing: 7px;
+}
+
+@media (max-width: 1024px) {
+    .lowerBoxRightSide p {
+        font-size: 15px;
+    }
+
+    .lowerBoxRightSide h3 {
+        font-size: 32px;
+        letter-spacing: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lowerBoxRightSide p {
+        font-size: 14px;
+    }
+
+    .lowerBoxRightSide h3 {
+        font-size: 28px;
+        letter-spacing: 4px;
+    }
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <link href="public/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/Global.css">
+
+</head>
+
+<body>
+
+
+    <nav
+        class="navbar top-0 left-0 overflow-hidden w-screen h-[180px] bg-black bg-[url('https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/img_1004_photo-1-1--2880w.jpg')] bg-cover bg-center flex justify-between p-4 z-10 relative">
+        <!-- Tint Overlay -->
+        <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+
+        <div class="navLeft text-white lg:flex hidden items-center flex-1 flex-row gap-3 justify-center relative z-10">
+            <a href="DontTell.html#DontTellSection" rel="noopener noreferrer">
+                <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-book-cover-345x500px-156h.png"
+                    class="w-[89px]" alt="Book Cover">
+            </a>
+            <a href="DontTell.html#theMovie" rel="noopener noreferrer">
+                <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-the-movie-1920w.png"
+                    class="w-[89px]" alt="Movie Cover">
+            </a>
+            <a href="rightside.html" rel="noopener noreferrer">
+                <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/right-side-of-wrong-1-1-1--1920w.png"
+                    class="w-[89px]" alt="Right Side Cover">
+            </a>
+        </div>
+
+        <div class="navRight w-full lg:block hidden text-white flex-2 mt-4 relative z-10">
+            <ul class="flex flex-row gap-4 items-center cursor-pointer justify-center">
+                <li id="home-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="index.html" class="block px-0 py-2">HOME</a>
+                </li>
+                <li id="about-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="/about.html" class="block px-0 py-2">ABOUT</a>
+                </li>
+                <li id="dont-tell-link"
+                    class="relative text-[17px] text-gray-400 group transition-colors duration-300 ease">
+                    <a href="DontTell.html" class="block px-3 py-1">DON'T TELL</a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 bg-white text-gray-400 hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#DontTellSection" class="block text-[19px]">THE BOOK</a>
+                        </li>
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#theMovie" class="block">THE MOVIE</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="right-side-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="rightside.html" class="block px-0 py-2">THE RIGHT SIDE OF THE WRONG</a>
+                </li>
+                <li id="contact-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="contactus.html" class="block px-0 py-2">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-50 backdrop-blur-lg text-black flex flex-col items-center justify-center lg:hidden hidden z-10 animate-fadeRight">
+            <ul class="flex flex-col gap-4">
+                <li class="text-[17px] font-semibold">
+                    <a href="index.html" class="block px-4 py-2 text-black">HOME</a>
+                </li>
+                <li class="text-[17px] font-semibold">
+                    <a href="/about.html" class="block px-4 py-2 text-black">ABOUT</a>
+                </li>
+                <li class="relative text-[17px] font-semibold">
+                    <a href="DontTell.html" class="block px-4 py-2 text-black">DON'T TELL</a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 bg-white hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#DontTellSection"
+                                class="block text-[19px] text-black font-semibold">THE
+                                BOOK</a>
+                        </li>
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#theMovie" class="block text-black font-semibold">THE MOVIE</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="text-[17px] font-semibold">
+                    <a href="rightside.html" class="block px-4 py-2 text-black">THE RIGHT SIDE OF THE WRONG</a>
+                </li>
+                <li class="text-[17px] font-semibold">
+                    <a href="contactus.html" class="block px-4 py-2 text-black">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="mobile-menu-icon" class="lg:hidden flex items-center z-20 cursor-pointer">
+            <img id="menu-icon" src="https://img.icons8.com/?size=100&id=120374&format=png&color=FFFFFF" alt="Menu Icon"
+                class="w-8 h-8" />
+        </div>
+
+    </nav>
+
+
+
+    <section class="privacyPolicy flex flex-col gap-6 py-5 px-4 lg:px-[100px] mt-4">
+
+        <h1 class="text-[40px] lg:text-[60px] text-gray-700 font-thin tracking-[0.23em]">PRIVACY POLICY</h1>
+
+        <p class="text-[rgb(99,99,99)] leading-7">Welcome to our website. In accessing and using this website, you
+            acknowledge that you
+            have read, understood and agree to be bound by the following terms and conditions.</p>
+
+        <h1 class="text-[30px] lg:text-[36px] text-gray-600 font-thin tracking-widest">DISCLAIMER</h1>
+
+        <p class="text-[rgb(99,99,99)] leading-7">While care has been taken to ensure that information contained in this
+            website is true and correct at the
+            time of publication, changes in circumstances after the time of publication may impact on the accuracy of
+            this
+            information. Stephen Roche gives no warranty or assurance, and makes no representation as to the accuracy of
+            any
+            information or advice contained, or that it is suitable for your intended use. Stephen Roche disclaims all
+            responsibility
+            and all liability (including without limitation, liability in negligence) for all expenses, losses, damages
+            and
+            costs you might
+            incur as a result of the information being inaccurate or incomplete in any way, and for any reason.</p>
+
+        <p class="text-[rgb(99,99,99)] leading-7">Each user waives and releases Stephen Roche and its agents, employees
+            and
+            service providers to the full
+            extent permitted by law from any and all claims relating to the usage of material or information made
+            available
+            through this
+            website. Subject to any terms implied by law, which cannot be excluded, in no event shall Stephen Roche be
+            liable for
+            any losses or damages, including incidental or consequential damages, resulting from use of the material.
+            This
+            website provides
+            links to external internet sites. These external websites are outside our control. It is the responsibility
+            of
+            users to
+            make their own decisions about the accuracy, reliability and correctness of information found. Although care
+            is
+            taken to
+            provide links to suitable material, the nature of the internet prevents the guaranteeing of suitability,
+            completeness or
+            accuracy of any material that this site may be linked to. Stephen Roche is not endorsing any provider of
+            products or
+            services by facilitating access to information about these providers from its website, nor does it accept
+            responsibility
+            for the quality of goods and services provided by third parties accessed through this site.</p>
+
+        <h1 class="text-[40px] lg:text-[46px] text-gray-700 font-thin tracking-[0.23em]">PRIVACY STATEMENT</h1>
+
+        <h1 class="text-[30px] lg:text-[36px] text-gray-600 font-thin tracking-widest">Collection of Personal
+            Information
+        </h1>
+
+        <p class="text-[rgb(99,99,99)] leading-7">We are committed to the protection of personal information. We
+            understand
+            that visitors and users of this
+            website are concerned about their privacy, and the confidentiality and security of any information that is
+            provided. Some
+            information is automatically collected whenever anybody accesses this website. Additional information may be
+            voluntarily
+            supplied through on-line forms and e-mail for specific service delivery purposes. Stephen Roche will only
+            use
+            such
+            information collected for the purpose for which it was supplied and such information will not be disclosed
+            to
+            any third
+            party unless required by law. When you visit this website our internet Service Provider's standard web logs
+            record
+            anonymous information for statistical purposes only, including: date and time of your visit to the site,
+            pages
+            you
+            accessed, type of browser you are using, referring site and internet address of the server accessing our
+            site.
+        </p>
+
+        <h1 class="text-[30px] lg:text-[36px] text-gray-600 font-thin tracking-widest">Security</h1>
+
+        <p class="text-[rgb(99,99,99)] leading-7">This website does not provide facilities for securely transmitting
+            information across the internet. We take
+            reasonable steps to ensure the security of all information that we collect, however no data transmission
+            over
+            the internet or
+            information stored on servers accessible through the internet can be guaranteed to be fully secure. These
+            activities are
+            undertaken at your risk.</p>
+
+        <h1 class="text-[30px] lg:text-[36px] text-gray-600 font-thin tracking-widest">Changes to this Privacy Statement
+        </h1>
+
+        <p class="text-[rgb(99,99,99)] leading-7">This privacy policy may change from time to time particularly as new
+            rules, regulations and industry codes are
+            introduced.</p>
+
+        <h1 class="text-[30px] lg:text-[36px] text-gray-600 font-thin tracking-widest">Contact</h1>
+
+        <p class="text-[rgb(99,99,99)] leading-7">If you have any queries about our privacy and security practices,
+            please
+            use the contact details found on
+            this website.</p>
+
+        <h1 class="text-[30px] lg:text-[36px] text-gray-600 font-thin tracking-widest">Copyright</h1>
+
+        <p class="text-[rgb(99,99,99)] leading-7">Materials published on the internet are protected by copyright law.
+            Apart
+            from fair dealing for the purposes
+            of private study, research, criticism or review, as permitted under the Copyright Act 1968, no part may be
+            reproduced or
+            reused for any commercial purposes whatsoever.</p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+<footer
+    class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row h-auto lg:h-[24vh] w-screen items-center justify-between py-7 mt-1">
+    <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center lg:text-left">
+        © 2024 Stephen Roche
+    </article>
+
+    <article
+        class="Footercenter flex-1 flex flex-col lg:flex-row gap-3 lg:gap-6 justify-center lg:justify-center items-center lg:items-center mt-4 lg:mt-0">
+        <a class="text-blue-400 text-base lg:text-xl" href="/PrivacyPolicy.html">Privacy Policy</a>
+        <a href="#" class="text-blue-400 text-base lg:text-xl">Website by Indigo Web</a>
+    </article>
+
+    <article
+        class="FooterRight flex-1 flex flex-col lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
+        <span class="flex flex-col gap-2 justify-center items-center p-1">
+            Book <a href="https://www.facebook.com/dont.tell.book">
+                <img class="w-[30px] lg:w-[35px]"
+                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+            </a>
+        </span>
+
+        <span class="flex flex-col gap-2 justify-center items-center p-1">
+            Movie <a href="https://www.facebook.com/DontTellMovie">
+                <img class="w-[30px] lg:w-[35px]"
+                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+            </a>
+        </span>
+
+        <span class="flex flex-col gap-2 justify-center items-center p-1">
+            Stephen <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
+                <img class="w-[30px] lg:w-[35px]"
+                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+            </a>
+        </span>
+    </article>
+</footer>
+
+
+
+    <script src="./Javascript/index.js"></script>
+</body>
+
+</html>

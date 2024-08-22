@@ -1,0 +1,44 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Build output
+dist/
+build/
+
+# Tailwind CSS
+# (You might not need to ignore Tailwind specific files unless generated during the build)
+!tailwind.config.js
+
+# PostCSS
+# (Ignore generated PostCSS files if applicable)
+postcss.config.js
+
+# Vercel
+# (Vercel-specific files should not be ignored, but make sure not to ignore configuration if needed)
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Other
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

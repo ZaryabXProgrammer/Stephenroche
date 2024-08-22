@@ -1,0 +1,309 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Roche</title>
+    <link rel="stylesheet" href="./Styles/Home.css">
+    <link href="public/tailwind.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Styles/Global.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+
+
+</head>
+
+<body>
+
+
+    <nav
+        class="navbar top-0 left-0 overflow-hidden w-screen h-[180px] bg-transparent flex justify-between p-4 z-10 absolute">
+        <!-- Tint Overlay -->
+
+
+        <div class="navLeft text-white lg:flex hidden items-center flex-1 flex-row gap-3 justify-center relative z-10">
+            <a href="DontTell.html#DontTellSection" rel="noopener noreferrer">
+                <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-book-cover-345x500px-156h.png"
+                    class="w-[89px]" alt="Book Cover">
+            </a>
+            <a href="DontTell.html#theMovie" rel="noopener noreferrer">
+                <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-the-movie-1920w.png"
+                    class="w-[89px]" alt="Movie Cover">
+            </a>
+            <a href="rightside.html" rel="noopener noreferrer">
+                <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/right-side-of-wrong-1-1-1--1920w.png"
+                    class="w-[89px]" alt="Right Side Cover">
+            </a>
+        </div>
+
+        <div class="navRight w-full lg:block hidden text-white flex-2 mt-4 relative z-10">
+            <ul class="flex flex-row gap-4 items-center cursor-pointer justify-center">
+                <li id="home-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="index.html" class="block px-0 py-2">HOME</a>
+                </li>
+                <li id="about-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="/about.html" class="block px-0 py-2">ABOUT</a>
+                </li>
+                <li id="dont-tell-link"
+                    class="relative text-[17px] text-gray-400 group transition-colors duration-300 ease">
+                    <a href="DontTell.html" class="block px-3 py-1">DON'T TELL</a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 bg-white text-gray-400 hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#DontTellSection" class="block text-[19px]">THE BOOK</a>
+                        </li>
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#theMovie" class="block">THE MOVIE</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="right-side-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="rightside.html" class="block px-0 py-2">THE RIGHT SIDE OF THE WRONG</a>
+                </li>
+                <li id="contact-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="contactus.html" class="block px-0 py-2">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-50 backdrop-blur-lg text-black flex flex-col items-center justify-center lg:hidden hidden z-10 animate-fadeRight">
+            <ul class="flex flex-col gap-4">
+                <li class="text-[17px] font-semibold">
+                    <a href="index.html" class="block px-4 py-2 text-black">HOME</a>
+                </li>
+                <li class="text-[17px] font-semibold">
+                    <a href="/about.html" class="block px-4 py-2 text-black">ABOUT</a>
+                </li>
+                <li class="relative text-[17px] font-semibold">
+                    <a href="DontTell.html" class="block px-4 py-2 text-black">DON'T TELL</a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 bg-white hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#DontTellSection"
+                                class="block text-[19px] text-black font-semibold">THE
+                                BOOK</a>
+                        </li>
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#theMovie" class="block text-black font-semibold">THE MOVIE</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="text-[17px] font-semibold">
+                    <a href="rightside.html" class="block px-4 py-2 text-black">THE RIGHT SIDE OF THE WRONG</a>
+                </li>
+                <li class="text-[17px] font-semibold">
+                    <a href="contactus.html" class="block px-4 py-2 text-black">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <div id="mobile-menu-icon" class="lg:hidden flex items-center z-20 cursor-pointer">
+            <img id="menu-icon" src="https://img.icons8.com/?size=100&id=120374&format=png&color=FFFFFF" alt="Menu Icon"
+                class="w-8 h-8" />
+        </div>
+
+
+    </nav>
+
+
+
+    <!-- //main slider -->
+    <section class="MainSlider">
+        <main class="fade lg:h-screen h-[60vh] w-full relative overflow-hidden" id="sliderPanel">
+            <!-- Set 'relative' positioning for the container -->
+
+            <article class="relative">
+                <div class="absolute inset-0">
+                    <!-- Image 1 -->
+                    <img class="w-full h-full object-cover" src="./Assets/Home/homepageImg.jpeg" alt="">
+                    <!-- Black Tint Overlay -->
+                    <div class="absolute inset-0 bg-black opacity-70"></div>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center mt-2">
+                    <p class="lg:text-[85px] text-[40px] text-[#ececec] tracking-[0.2em] font-bold text-center px-4 
+                        sm:text-[60px] sm:px-2 
+                        xs:text-[45px] xs:px-1">
+                        JUSTICE CAN BE <br> TELLING...
+                    </p>
+                </div>
+            </article>
+
+            <article class="relative">
+                <div class="absolute inset-0">
+                    <!-- Image 2 -->
+                    <img class="w-full h-full object-cover" src="./Assets/Home/homePageImgTwo.jpeg" alt="">
+                    <!-- Black Tint Overlay -->
+                    <div class="absolute inset-0 bg-black opacity-80"></div>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <p class="text-[85px] text-white font-bold text-center px-4 
+                        sm:text-[60px] sm:px-2 
+                        xs:text-[45px] xs:px-1">
+                    </p>
+                </div>
+            </article>
+
+            <article class="relative">
+                <div class="absolute inset-0">
+                    <!-- Image 3 -->
+                    <img class="w-full h-full object-cover" src="./Assets/Home/homepageImgThree.jpeg" alt="">
+                    <!-- Black Tint Overlay -->
+                    <div class="absolute inset-0 bg-black opacity-60"></div>
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <p class="lg:text-[85px] text-[40px] text-[#ececec] tracking-[0.2em] font-bold text-center px-4 
+                                        sm:text-[60px] sm:px-2 
+                                        xs:text-[45px] xs:px-1">
+                        JUSTICE CAN BE <br> TELLING...
+                    </p>
+                </div>
+            </article>
+        </main>
+    </section>
+
+
+
+
+
+    <!-- //main home compoent -->
+    <aside class="mainHomePageBlog">
+
+        <h3>Stephen Roche</h3>
+        <p>The real Australian story that changed the way we protect our children and was a catalyst that ultimately led
+            to a
+            Royal Commission into Institutional Child Sexual Abuse.</p>
+
+        <p>Desperate to be believed and tormented by memories of sexual abuse as a 12-year-old boarder at a prestigious
+            Australian school, Lyndal’s last hope is to take on the justice system.</p>
+
+        <p>Estranged from her family with a small window of opportunity to be heard by the courts, she returns to the
+            country
+            town that plagued her mind for the first time in 11 years.</p>
+
+        <p>Lyndal entrusts local lawyer Stephen Roche who recognises she is at breaking point and sets out to expose the
+            secret
+            sex scandal taking place in a local school. With the help of bright-eyed young associate Jodie Collins and
+            the
+            enigmatic barrister Bob Myers, Lyndal sets out on the fight of a lifetime.</p>
+
+        <p>At its heart, Don’t Tell is a true story about a young girl and an Aussie lawyer who discover the courage to
+            speak up
+            and take on the Anglican Church.</p>
+
+        <h4>
+            The Right Side of Wrong
+
+        </h4>
+
+        <p>Uncovering the harrowing stories of Shine’s real heroes – our clients, from co-founder Stephen Roche.
+        </p>
+
+        <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/right-side-of-wrong-1-1-1--600h.png" alt="">
+
+        <h5>What's Inside</h5>
+
+        <p>Listening to the voices of those seeking justice has always been at the heart of Shine Lawyers.</p>
+
+        <p>Now, Shine is picking up the talking stick to tell its story from modest beginnings as a general law practice
+            courting disaster with every battle to becoming a formidable voice for those who have been harmed or
+            wronged.</p>
+
+        <p>This book provides an insider’s view into the real heroes of this journey – Shine’s clients, and the battles
+            and
+            obstacles they have faced in taking legal action, often as a last resort, against injustice inflicted by the
+            powerful and the connected. Some have won, some have not. All have left an imprint on Shine.</p>
+
+
+        <footer>
+            <article>Grab your copy today!</article>
+            <h5>Currently out of stock, please check back in soon.</h5>
+
+            <h6>For overseas orders, please <a target="_blank" href="./contactus.html">contact us</a> .</h6>
+        </footer>
+
+
+
+    </aside>
+
+
+
+
+    <footer
+        class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row h-auto lg:h-[24vh] w-screen items-center justify-between py-7 mt-6">
+        <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center lg:text-left">
+            © 2024 Stephen Roche
+        </article>
+
+        <article
+            class="Footercenter flex-1 flex flex-col lg:flex-row gap-3 lg:gap-6 justify-center lg:justify-center items-center lg:items-center mt-4 lg:mt-0">
+            <a class="text-blue-400 text-base lg:text-xl" href="/PrivacyPolicy.html">Privacy Policy</a>
+            <a href="#" class="text-blue-400 text-base lg:text-xl">Website by Indigo Web</a>
+        </article>
+
+        <article
+            class="FooterRight flex-1 flex flex-col lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
+            <span class="flex flex-col gap-2 justify-center items-center p-1">
+                Book <a href="https://www.facebook.com/dont.tell.book">
+                    <img class="w-[30px] lg:w-[35px]"
+                        src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+                </a>
+            </span>
+
+            <span class="flex flex-col gap-2 justify-center items-center p-1">
+                Movie <a href="https://www.facebook.com/DontTellMovie">
+                    <img class="w-[30px] lg:w-[35px]"
+                        src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+                </a>
+            </span>
+
+            <span class="flex flex-col gap-2 justify-center items-center p-1">
+                Stephen <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
+                    <img class="w-[30px] lg:w-[35px]"
+                        src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+                </a>
+            </span>
+        </article>
+    </footer>
+
+
+
+
+
+
+    <script src="./Javascript/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $('.fade').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: true,           // Enables autoplay
+            autoplaySpeed: 3000,
+            // Time between slides (in milliseconds)
+
+        });
+    </script>
+
+
+
+</body>
+
+
+</html>

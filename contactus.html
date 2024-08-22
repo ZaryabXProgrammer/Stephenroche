@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Stephen Roche</title>
+    <link href="public/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/Global.css">
+
+</head>
+
+<body>
+
+
+    <nav
+        class="navbar top-0 left-0 overflow-hidden w-screen h-[180px] bg-black bg-[url('https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/img_1004_photo-1-1--2880w.jpg')] bg-cover bg-center flex justify-between p-4 z-10 relative">
+        <!-- Tint Overlay -->
+        <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+
+        <div class="navLeft text-white lg:flex hidden items-center flex-1 flex-row gap-3 justify-center relative z-10">
+            <a href="DontTell.html#DontTellSection" rel="noopener noreferrer">
+                <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-book-cover-345x500px-156h.png"
+                    class="w-[89px]" alt="Book Cover">
+            </a>
+            <a href="DontTell.html#theMovie" rel="noopener noreferrer">
+                <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-the-movie-1920w.png"
+                    class="w-[89px]" alt="Movie Cover">
+            </a>
+            <a href="rightside.html" rel="noopener noreferrer">
+                <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/right-side-of-wrong-1-1-1--1920w.png"
+                    class="w-[89px]" alt="Right Side Cover">
+            </a>
+        </div>
+
+        <div class="navRight w-full lg:block hidden text-white flex-2 mt-4 relative z-10">
+            <ul class="flex flex-row gap-4 items-center cursor-pointer justify-center">
+                <li id="home-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="index.html" class="block px-0 py-2">HOME</a>
+                </li>
+                <li id="about-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="/about.html" class="block px-0 py-2">ABOUT</a>
+                </li>
+                <li id="dont-tell-link"
+                    class="relative text-[17px] text-gray-400 group transition-colors duration-300 ease">
+                    <a href="DontTell.html" class="block px-3 py-1">DON'T TELL</a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 bg-white text-gray-400 hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#DontTellSection" class="block text-[19px]">THE BOOK</a>
+                        </li>
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#theMovie" class="block">THE MOVIE</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="right-side-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="rightside.html" class="block px-0 py-2">THE RIGHT SIDE OF THE WRONG</a>
+                </li>
+                <li id="contact-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                    <a href="contactus.html" class="block px-0 py-2">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-50 backdrop-blur-lg text-black flex flex-col items-center justify-center lg:hidden hidden z-10 animate-fadeRight">
+            <ul class="flex flex-col gap-4">
+                <li class="text-[17px] font-semibold">
+                    <a href="index.html" class="block px-4 py-2 text-black">HOME</a>
+                </li>
+                <li class="text-[17px] font-semibold">
+                    <a href="/about.html" class="block px-4 py-2 text-black">ABOUT</a>
+                </li>
+                <li class="relative text-[17px] font-semibold">
+                    <a href="DontTell.html" class="block px-4 py-2 text-black">DON'T TELL</a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 bg-white hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#DontTellSection"
+                                class="block text-[19px] text-black font-semibold">THE
+                                BOOK</a>
+                        </li>
+                        <li
+                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#theMovie" class="block text-black font-semibold">THE MOVIE</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="text-[17px] font-semibold">
+                    <a href="rightside.html" class="block px-4 py-2 text-black">THE RIGHT SIDE OF THE WRONG</a>
+                </li>
+                <li class="text-[17px] font-semibold">
+                    <a href="contactus.html" class="block px-4 py-2 text-black">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="mobile-menu-icon" class="lg:hidden flex items-center z-20 cursor-pointer">
+            <img id="menu-icon" src="https://img.icons8.com/?size=100&id=120374&format=png&color=FFFFFF" alt="Menu Icon"
+                class="w-8 h-8" />
+        </div>
+
+    </nav>
+
+
+
+
+    <section class="contactUsPage flex flex-col gap-5 py-5  ">
+
+
+        <h1 class="text-[30px] lg:text-[60px] tracking-wider text-[#696969] font-extralight text-center">CONTACT US</h1>
+        <span class="flex flex-row items-center gap-4 justify-center cursor-pointer">
+            <img src="https://img.icons8.com/?size=100&id=86840&format=png&color=000000" class="w-6" alt="">
+            <p class="text-[#93d1f3] text-xl">
+                <a href="mailto:info@stephenroche.com.au" class="hover:underline">info@stephenroche.com.au</a>
+            </p>
+        </span>
+
+
+
+        <h3 class="text-[20px] lg:text-[35px] tracking-widest mt-6 text-gray-600 text-center">GET IN TOUCH</h3>
+
+
+
+        <main class="flex justify-center w-screen">
+            <form class="flex flex-col border-none border-black p-4 w-full max-w-[43rem] gap-3">
+                <input type="text" placeholder="Name" name="Name" class="border border-black rounded-none p-2 mb-2">
+                <input type="text" placeholder="Email" name="Email" class="border border-black rounded-none p-2 mb-2">
+                <input type="text" placeholder="Phone" name="Phone" class="border border-black rounded-none p-2 mb-2">
+
+                <label for="Enquiry" class="mb-2">Enquiry Type:</label>
+                <select name="Enquiry" id="Enquiry" class="border border-black rounded-none p-2 mb-2">
+                    <option value="">Overseas Order</option>
+                    <option value="">Book Information</option>
+                    <option value="">Phone</option>
+                    <option value="">Enquiry Type</option>
+                </select>
+
+                <textarea name="Message" placeholder="Message"
+                    class="border border-black rounded-none p-2 mb-2"></textarea>
+
+                <button
+                    class="text-white bg-black hover:text-black hover:bg-white border lg:w-1/3 w-full border-black rounded-none p-2 transition-colors duration-300 ease-in-out">
+                    Send Message
+                </button>
+
+            </form>
+        </main>
+
+
+    </section>
+
+
+    <footer
+        class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row h-auto lg:h-[24vh] w-screen items-center justify-between py-7 mt-6">
+        <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center lg:text-left">
+            © 2024 Stephen Roche
+        </article>
+
+        <article
+            class="Footercenter flex-1 flex flex-col lg:flex-row gap-3 lg:gap-6 justify-center lg:justify-center items-center lg:items-center mt-4 lg:mt-0">
+            <a class="text-blue-400 text-base lg:text-xl" href="/privacy-policy">Privacy Policy</a>
+            <a href="#" class="text-blue-400 text-base lg:text-xl">Website by Indigo Web</a>
+        </article>
+
+        <article
+            class="FooterRight flex-1 flex flex-col lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
+            <span class="flex flex-col gap-2 justify-center items-center p-1">
+                Book <a href="https://www.facebook.com/dont.tell.book">
+                    <img class="w-[30px] lg:w-[35px]"
+                        src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+                </a>
+            </span>
+
+            <span class="flex flex-col gap-2 justify-center items-center p-1">
+                Movie <a href="https://www.facebook.com/DontTellMovie">
+                    <img class="w-[30px] lg:w-[35px]"
+                        src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+                </a>
+            </span>
+
+            <span class="flex flex-col gap-2 justify-center items-center p-1">
+                Stephen <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
+                    <img class="w-[30px] lg:w-[35px]"
+                        src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+                </a>
+            </span>
+        </article>
+    </footer>
+
+
+    <script src="./Javascript/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+.topContainer {
+    padding: 3rem 6rem;
+    /* Default padding for larger screens */
+}
+
+/* Media query for tablets (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .topContainer {
+        padding: 2rem;
+        /* Padding for tablets */
+    }
+}
+
+/* Media query for mobile devices (less than 768px) */
+@media (max-width: 767px) {
+    .topContainer {
+        padding: 20px;
+        /* Padding for mobile devices */
+    }
+}
+
+.DontTextBoxOne {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.DontTextBoxOne header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.DontTextBoxOne header p {
+    font-size: 19px;
+    color: rgb(99, 98, 98);
+}
+
+.DontTextBoxOne footer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+.DontTextBoxOne footer h3 {
+    font-size: 29px;
+    color: rgb(80, 80, 80);
+    margin-top: 25px;
+    letter-spacing: 8px;
+
+}
+
+.DontTextBoxOne footer p {
+
+
+    font-size: 19px;
+    color: rgb(99, 98, 98);
+
+}
+
+/* Tablet devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .DontTextBoxOne header p {
+        font-size: 17px;
+    }
+
+    .DontTextBoxOne footer h3 {
+        font-size: 26px;
+        margin-top: 20px;
+        letter-spacing: 6px;
+    }
+
+    .DontTextBoxOne footer p {
+        font-size: 18px;
+    }
+
+    .DontTextBoxOne footer {
+        gap: 12px;
+    }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .DontTextBoxOne header p {
+        font-size: 16px;
+    }
+
+    .DontTextBoxOne footer h3 {
+        font-size: 24px;
+        margin-top: 18px;
+        letter-spacing: 5px;
+    }
+
+    .DontTextBoxOne footer p {
+        font-size: 17px;
+    }
+
+    .DontTextBoxOne footer {
+        gap: 10px;
+    }
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .DontTextBoxOne header p {
+        font-size: 15px;
+    }
+
+    .DontTextBoxOne footer h3 {
+        font-size: 22px;
+        margin-top: 15px;
+        letter-spacing: 4px;
+    }
+
+    .DontTextBoxOne footer p {
+        font-size: 16px;
+    }
+
+    .DontTextBoxOne footer {
+        gap: 8px;
+    }
+}
+
+/* //The Movie Section */
+
+
+.theMovie {
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    width: 100vw;
+    height: auto;
+    color: rgb(71, 71, 71);
+    padding: 4rem 6rem;
+    margin-top: 0.5rem;
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .theMovie {
+        gap: 2rem;
+
+        padding: 2rem 3rem;
+
+    }
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .theMovie {
+        gap: 1.5rem;
+
+        padding: 1.5rem 1.5rem;
+
+    }
+}
+
+/* //LowerTextBox */
+
+
+.lowerTextBox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lowerTextBox p {
+    font-size: 19px;
+    color: rgb(99, 98, 98);
+}
+
+.lowerTextBox p a {
+    color: #3289b4;
+}
+
+@media (max-width: 1024px) {
+    .lowerTextBox p {
+        font-size: 17px;
+    }
+
+    .lowerTextBox {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lowerTextBox p {
+        font-size: 16px;
+    }
+
+    .lowerTextBox {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lowerTextBox p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .lowerTextBox {
+        gap: 6px;
+    }
+}
