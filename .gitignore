@@ -19,9 +19,7 @@ build/
 # (You might not need to ignore Tailwind specific files unless generated during the build)
 !tailwind.config.js
 
-# PostCSS
-# (Ignore generated PostCSS files if applicable)
-postcss.config.js
+
 
 # Vercel
 # (Vercel-specific files should not be ignored, but make sure not to ignore configuration if needed)
