@@ -11,6 +11,10 @@
     <!-- PhotoSwipe JS -->
     <script src="https://unpkg.com/photoswipe@5/dist/photoswipe.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/fancybox.css">
+
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/fancybox.umd.js"></script>
     <!-- PhotoSwipe UI JS -->
     <script src="https://unpkg.com/photoswipe@5/dist/photoswipe-ui-default.min.js"></script>
 
@@ -29,34 +33,43 @@
         <!-- Tint Overlay -->
         <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
 
-        <div class="navLeft text-white lg:flex hidden items-center flex-1 flex-row gap-3 justify-center relative z-10">
+        <div
+            class="navLeft text-white flex flex-row items-center flex-1 gap-3 relative z-10 md:flex-row lg:justify-center">
             <a href="DontTell.html#DontTellSection" rel="noopener noreferrer">
                 <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-book-cover-345x500px-156h.png"
-                    class="w-[89px]" alt="Book Cover">
+                    class="w-[83px] lg:w-[89px]" alt="Book Cover">
             </a>
             <a href="DontTell.html#theMovie" rel="noopener noreferrer">
                 <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-the-movie-1920w.png"
-                    class="w-[89px]" alt="Movie Cover">
+                    class="w-[83px] lg:w-[89px]" alt="Movie Cover">
             </a>
             <a href="rightside.html" rel="noopener noreferrer">
                 <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/right-side-of-wrong-1-1-1--1920w.png"
-                    class="w-[89px]" alt="Right Side Cover">
+                    class="w-[83px] lg:w-[89px]" alt="Right Side Cover">
             </a>
         </div>
 
+
         <div class="navRight w-full lg:block hidden text-white flex-2 mt-4 relative z-10">
             <ul class="flex flex-row gap-4 items-center cursor-pointer justify-center">
-                <li id="home-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                <li id="home-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="index.html" class="block px-0 py-2">HOME</a>
                 </li>
-                <li id="about-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                <li id="about-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="/about.html" class="block px-0 py-2">ABOUT</a>
                 </li>
+
                 <li id="dont-tell-link"
-                    class="relative text-[17px] text-gray-400 group transition-colors duration-300 ease">
-                    <a href="DontTell.html" class="block px-3 py-1">DON'T TELL</a>
+                    class="relative text-[17px] text-gray-400 group transition-colors duration-300 ease hover:text-white">
+                    <a href="DontTell.html" class="px-2 py-1 flex items-center gap-2" id="dontTellNavLink">
+                        DON'T TELL
+                        <img id="dontTellIcon" src="https://img.icons8.com/?size=100&id=2760&format=png&color=FFFFFF"
+                            width="11" alt="arrow" class="transition-transform duration-300 ease-in-out">
+                    </a>
                     <!-- Dropdown Menu -->
-                    <ul
+                    <ul id="dropdownDontTell"
                         class="absolute left-0 bg-white text-gray-400 hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
                         <li
                             class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
@@ -68,56 +81,65 @@
                         </li>
                     </ul>
                 </li>
-                <li id="right-side-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+
+                <li id="right-side-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="rightside.html" class="block px-0 py-2">THE RIGHT SIDE OF THE WRONG</a>
                 </li>
-                <li id="contact-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                <li id="contact-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="contactus.html" class="block px-0 py-2">CONTACT</a>
                 </li>
             </ul>
         </div>
 
         <div id="mobile-menu"
-            class="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-50 backdrop-blur-lg text-black flex flex-col items-center justify-center lg:hidden hidden z-10 animate-fadeRight">
-            <ul class="flex flex-col gap-4">
-                <li class="text-[17px] font-semibold">
-                    <a href="index.html" class="block px-4 py-2 text-black">HOME</a>
+            class="fixed top-0 py-9 left-0 w-screen h-[auto] bg-[#272a2f] flex flex-col items-center justify-center lg:hidden hidden z-10 animate-slideDown">
+            <ul class="flex flex-col gap-2 items-center">
+                <li class="text-[17px]">
+                    <a href="index.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">HOME</a>
                 </li>
-                <li class="text-[17px] font-semibold">
-                    <a href="/about.html" class="block px-4 py-2 text-black">ABOUT</a>
+                <li class="text-[17px]">
+                    <a href="/about.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">ABOUT</a>
                 </li>
-                <li class="relative text-[17px] font-semibold">
-                    <a href="DontTell.html" class="block px-4 py-2 text-black">DON'T TELL</a>
+
+                <li id="dont-tell-link-menu" class="relative text-[17px] group transition-colors duration-300 ease">
+                    <a class="px-2 py-1 flex items-center gap-2 text-[#b5b5b5] text-xl" id="dontTellNavLink-menu">
+                        DON'T TELL
+                        <img id="arrowIconDontUp-menu"
+                            src="https://img.icons8.com/?size=100&id=2760&format=png&color=FFFFFF" width="11"
+                            alt="arrow" class="transition-transform duration-300 ease-in-out">
+                    </a>
                     <!-- Dropdown Menu -->
-                    <ul
-                        class="absolute left-0 bg-white hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
-                        <li
-                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                    <ul id="dropdownDontTellNew-menu"
+                        class="left-0 text-gray-400 hidden transition-opacity duration-300 ease-in-out opacity-0 animate-slideFadeIn">
+                        <li class="px-6 py-2 transition-colors duration-50 whitespace-nowrap">
                             <a href="DontTell.html#DontTellSection"
-                                class="block text-[19px] text-black font-semibold">THE
+                                class="block text-[19px] text-[#b5b5b5] text-[15px]">THE
                                 BOOK</a>
                         </li>
-                        <li
-                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
-                            <a href="DontTell.html#theMovie" class="block text-black font-semibold">THE MOVIE</a>
+                        <li class="px-6 py-2 transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#theMovie" class="block text-[#b5b5b5] text-[15px]">THE MOVIE</a>
                         </li>
                     </ul>
                 </li>
-                <li class="text-[17px] font-semibold">
-                    <a href="rightside.html" class="block px-4 py-2 text-black">THE RIGHT SIDE OF THE WRONG</a>
+
+                <li class="text-[17px]">
+                    <a href="rightside.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">THE RIGHT SIDE OF THE
+                        WRONG</a>
                 </li>
-                <li class="text-[17px] font-semibold">
-                    <a href="contactus.html" class="block px-4 py-2 text-black">CONTACT</a>
+                <li class="text-[17px]">
+                    <a href="contactus.html" class="block px-4 py-2 text-[#b5b5b5] text-xl  ">CONTACT</a>
                 </li>
             </ul>
         </div>
 
 
-        <div id="mobile-menu-icon" class="lg:hidden flex items-center z-20 cursor-pointer">
-            <img id="menu-icon" src="https://img.icons8.com/?size=100&id=120374&format=png&color=FFFFFF" alt="Menu Icon"
-                class="w-8 h-8" />
-        </div>
 
+        <div id="mobile-menu-icon" class="lg:hidden flex items-center z-20 cursor-pointer absolute right-3 top-3">
+            <img id="menu-icon" src="https://img.icons8.com/?size=100&id=120374&format=png&color=FFFFFF" alt="Menu Icon"
+                class="w-6 h-6" />
+        </div>
     </nav>
 
 
@@ -127,7 +149,8 @@
 
 
         <section class="DontTellSection flex flex-col gap-5 sm:gap-7 items-center" id="DontTellSection">
-            <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-thin tracking-widest text-[#4c4c4c] text-center">DON'T
+            <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-[400] tracking-[13px] text-[#4c4c4c] text-center">
+                DON'T
                 TELL
             </h1>
             <h3 class="text-2xl sm:text-3xl lg:text-4xl text-[#4c4c4c] tracking-wider font-thin text-center">THE BOOK
@@ -135,7 +158,7 @@
 
             <article class="mb-6 sm:mb-8 lg:mb-10">
                 <div
-                    class="py-6 sm:py-8 lg:py-10 px-4 sm:px-6 md:px-8 lg:px-9 bg-[#ececec] flex flex-col sm:flex-row gap-4 sm:gap-5">
+                    class="py-6 sm:py-8 lg:py-10 px-4 sm:px-6 md:px-8 lg:px-9 bg-[#ececec] flex flex-row sm:flex-row gap-4 sm:gap-5">
                     <!-- Add data-pswp-width and data-pswp-height attributes for image dimensions -->
                     <a href="./Assets/DontTell/dontellbook.webp" data-pswp-width="1200" data-pswp-height="1600"
                         target="_blank" class="pswp-gallery-item">
@@ -325,20 +348,35 @@
             THE MOVIE
         </h1>
 
-        <aside class="flex flex-col flex-wrap sm:flex-row gap-5 items-center justify-center mt-8">
-            <img class="w-[18rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
-                src="./Assets/DontTell/TheMovie/toppic1.webp" alt="">
-            <img class="w-[18rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
-                src="./Assets/DontTell/TheMovie/toppic2.webp" alt="">
-            <img class="w-[18rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
-                src="./Assets/DontTell/TheMovie/toppic3.webp" alt="">
-            <img class="w-[18rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
-                src="./Assets/DontTell/TheMovie/toppic4.webp" alt="">
-            <img class="w-[18rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
-                src="./Assets/DontTell/TheMovie/toppic5.webp" alt="">
+        <aside class="flex flex-wrap sm:flex-row gap-5 items-center justify-center mt-8">
+            <a href="./Assets/DontTell/TheMovie/toppic1.webp" data-fancybox="gallery" data-caption="Image 1">
+                <img class="lg:w-[18rem] w-[8rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
+                    src="./Assets/DontTell/TheMovie/toppic1.webp" alt="Toppic 1">
+            </a>
+            <a href="./Assets/DontTell/TheMovie/toppic2.webp" data-fancybox="gallery" data-caption="Image 2">
+                <img class="lg:w-[18rem] w-[8rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
+                    src="./Assets/DontTell/TheMovie/toppic2.webp" alt="Toppic 2">
+            </a>
+            <a href="./Assets/DontTell/TheMovie/toppic3.webp" data-fancybox="gallery" data-caption="Image 3">
+                <img class="lg:w-[18rem] w-[8rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
+                    src="./Assets/DontTell/TheMovie/toppic3.webp" alt="Toppic 3">
+            </a>
+            <a href="./Assets/DontTell/TheMovie/toppic4.webp" data-fancybox="gallery" data-caption="Image 4">
+                <img class="lg:w-[18rem] w-[8rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
+                    src="./Assets/DontTell/TheMovie/toppic4.webp" alt="Toppic 4">
+            </a>
+            <a href="./Assets/DontTell/TheMovie/toppic5.webp" data-fancybox="gallery" data-caption="Image 5">
+                <img class="lg:w-[18rem] w-[8rem] sm:w-[12rem] md:w-[11rem] transition hover:opacity-80"
+                    src="./Assets/DontTell/TheMovie/toppic5.webp" alt="Toppic 5">
+            </a>
         </aside>
 
-        <img class="w-full mt-8" src="./Assets/DontTell/TheMovie/coverpic.webp" alt="">
+        <a href="./Assets/DontTell/TheMovie/coverpic.webp" class="w-full" data-fancybox="gallery"
+            data-caption="Cover Picture">
+            <img class="w-full mt-8 transition hover:opacity-80" src="./Assets/DontTell/TheMovie/coverpic.webp"
+                alt="Cover Picture">
+        </a>
+
 
 
         <aside class="lowerTextBox">
@@ -387,22 +425,22 @@
         <article class="flex flex-col gap-4 p-4 w-full">
             <div class="flex flex-col gap-3">
                 <h1 class="text-3xl tracking-widest text-start pb-5">Available to Stream</h1>
-                <span class="flex flex-wrap gap-2 justify-center lg:flex-row flex-col items-center">
+                <span class="flex flex-wrap gap-2 justify-center lg:flex-row items-center">
                     <a href="https://tv.apple.com/au/movie/dont-tell/umc.cmc.l1etelomojw3rchn00sv3osh" target="_blank">
-                        <img class="w-[18rem] lg:w-[18rem] sm:w-[10rem] transition hover:opacity-70"
+                        <img class="w-[7rem] lg:w-[18rem] transition hover:opacity-70"
                             src="./Assets/DontTell/GetFrom/itunes.svg" alt="">
                     </a>
                     <a href="https://www.youtube.com/watch?v=4m6biDQmWvI&feature=youtu.be" target="_blank">
-                        <img class="w-[18rem] lg:w-[18rem] sm:w-[14rem] transition hover:opacity-70"
+                        <img class="w-[7rem] lg:w-[18rem] transition hover:opacity-70"
                             src="./Assets/DontTell/GetFrom/googletv.png" alt="">
                     </a>
                     <a href="https://play.google.com/store/movies/details/Don_t_Tell?id=4m6biDQmWvI&pli=1"
                         target="_blank">
-                        <img class="w-[18rem] lg:w-[18rem] sm:w-[14rem] transition hover:opacity-70"
+                        <img class="w-[7rem] lg:w-[18rem] transition hover:opacity-70"
                             src="./Assets/DontTell/GetFrom/googleplay.png" alt="">
                     </a>
                     <a href="https://www.fetchtv.com.au/movie/details/513589" target="_blank">
-                        <img class="w-[17rem] lg:w-[18rem] sm:w-[13rem] transition hover:opacity-70"
+                        <img class="w-[7rem] lg:w-[18rem] transition hover:opacity-70"
                             src="./Assets/DontTell/GetFrom/fetch.png" alt="">
                     </a>
                 </span>
@@ -431,42 +469,42 @@
 
 
 
-<footer
-    class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row h-auto lg:h-[24vh] w-screen items-center justify-between py-7 mt-1">
-    <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center lg:text-left">
-        © 2024 Stephen Roche
-    </article>
+    <footer
+        class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row lg:h-[24vh] gap-10 w-screen items-center justify-between py-7 mt-1">
+        <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center ">
+            © 2024 Stephen Roche
+        </article>
 
-    <article
-        class="Footercenter flex-1 flex flex-col lg:flex-row gap-3 lg:gap-6 justify-center lg:justify-center items-center lg:items-center mt-4 lg:mt-0">
-        <a class="text-blue-400 text-base lg:text-xl" href="/PrivacyPolicy.html">Privacy Policy</a>
-        <a href="#" class="text-blue-400 text-base lg:text-xl">Website by Indigo Web</a>
-    </article>
+        <article
+            class="Footercenter flex-1 flex flex-col lg:flex-row gap-3 lg:gap-6 justify-center lg:justify-center items-center lg:items-center mt-4 lg:mt-0">
+            <a class="text-blue-400 text-base lg:text-xl" href="/PrivacyPolicy.html">Privacy Policy</a>
+            <a href="#" class="text-blue-400 text-base lg:text-xl">Website by Indigo Web</a>
+        </article>
 
-    <article
-        class="FooterRight flex-1 flex flex-col lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
-        <span class="flex flex-col gap-2 justify-center items-center p-1">
-            Book <a href="https://www.facebook.com/dont.tell.book">
-                <img class="w-[30px] lg:w-[35px]"
-                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
-            </a>
-        </span>
+        <article
+            class="FooterRight flex-1 flex flex-row lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
+            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
+                Book <a href="https://www.facebook.com/dont.tell.book">
+                    <img class="w-[30px] lg:w-[35px]"
+                        src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
+                </a>
+            </span>
 
-        <span class="flex flex-col gap-2 justify-center items-center p-1">
-            Movie <a href="https://www.facebook.com/DontTellMovie">
-                <img class="w-[30px] lg:w-[35px]"
-                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
-            </a>
-        </span>
+            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
+                Movie <a href="https://www.facebook.com/DontTellMovie">
+                    <img class="w-[30px] lg:w-[35px]"
+                        src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
+                </a>
+            </span>
 
-        <span class="flex flex-col gap-2 justify-center items-center p-1">
-            Stephen <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
-                <img class="w-[30px] lg:w-[35px]"
-                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
-            </a>
-        </span>
-    </article>
-</footer>
+            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
+                Stephen <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
+                    <img class="w-[30px] lg:w-[35px]"
+                        src="https://img.icons8.com/?size=100&id=8808&format=png&color=767676" alt="">
+                </a>
+            </span>
+        </article>
+    </footer>
 
 
 

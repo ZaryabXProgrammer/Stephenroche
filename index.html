@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 
 </head>
@@ -43,17 +45,24 @@
 
         <div class="navRight w-full lg:block hidden text-white flex-2 mt-4 relative z-10">
             <ul class="flex flex-row gap-4 items-center cursor-pointer justify-center">
-                <li id="home-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                <li id="home-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="index.html" class="block px-0 py-2">HOME</a>
                 </li>
-                <li id="about-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                <li id="about-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="/about.html" class="block px-0 py-2">ABOUT</a>
                 </li>
+
                 <li id="dont-tell-link"
-                    class="relative text-[17px] text-gray-400 group transition-colors duration-300 ease">
-                    <a href="DontTell.html" class="block px-3 py-1">DON'T TELL</a>
+                    class="relative text-[17px] text-gray-400 group transition-colors duration-300 ease hover:text-white">
+                    <a href="DontTell.html" class="px-2 py-1 flex items-center gap-2" id="dontTellNavLink">
+                        DON'T TELL
+                        <img id="dontTellIcon" src="https://img.icons8.com/?size=100&id=2760&format=png&color=FFFFFF"
+                            width="11" alt="arrow" class="transition-transform duration-300 ease-in-out">
+                    </a>
                     <!-- Dropdown Menu -->
-                    <ul
+                    <ul id="dropdownDontTell"
                         class="absolute left-0 bg-white text-gray-400 hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
                         <li
                             class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
@@ -65,10 +74,13 @@
                         </li>
                     </ul>
                 </li>
-                <li id="right-side-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+
+                <li id="right-side-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="rightside.html" class="block px-0 py-2">THE RIGHT SIDE OF THE WRONG</a>
                 </li>
-                <li id="contact-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                <li id="contact-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="contactus.html" class="block px-0 py-2">CONTACT</a>
                 </li>
             </ul>
@@ -76,42 +88,50 @@
 
 
         <div id="mobile-menu"
-            class="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-50 backdrop-blur-lg text-black flex flex-col items-center justify-center lg:hidden hidden z-10 animate-fadeRight">
-            <ul class="flex flex-col gap-4">
-                <li class="text-[17px] font-semibold">
-                    <a href="index.html" class="block px-4 py-2 text-black">HOME</a>
+            class="fixed top-0 py-9 left-0 w-screen h-[auto] bg-[#272a2f] flex flex-col items-center justify-center lg:hidden hidden z-10 animate-slideDown">
+            <ul class="flex flex-col gap-2 items-center">
+                <li class="text-[17px]">
+                    <a href="index.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">HOME</a>
                 </li>
-                <li class="text-[17px] font-semibold">
-                    <a href="/about.html" class="block px-4 py-2 text-black">ABOUT</a>
+                <li class="text-[17px]">
+                    <a href="/about.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">ABOUT</a>
                 </li>
-                <li class="relative text-[17px] font-semibold">
-                    <a href="DontTell.html" class="block px-4 py-2 text-black">DON'T TELL</a>
+
+                <li id="dont-tell-link-menu" class="relative text-[17px] group transition-colors duration-300 ease">
+                    <a class="px-2 py-1 flex items-center gap-2 text-[#b5b5b5] text-xl" id="dontTellNavLink-menu">
+                        DON'T TELL
+                        <img id="arrowIconDontUp-menu"
+                            src="https://img.icons8.com/?size=100&id=2760&format=png&color=FFFFFF" width="11"
+                            alt="arrow" class="transition-transform duration-300 ease-in-out">
+                    </a>
                     <!-- Dropdown Menu -->
-                    <ul
-                        class="absolute left-0 bg-white hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
-                        <li
-                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                    <ul id="dropdownDontTellNew-menu"
+                        class="left-0 text-gray-400 hidden transition-opacity duration-300 ease-in-out opacity-0 animate-slideFadeIn">
+                        <li class="px-6 py-2 transition-colors duration-50 whitespace-nowrap">
                             <a href="DontTell.html#DontTellSection"
-                                class="block text-[19px] text-black font-semibold">THE
+                                class="block text-[19px] text-[#b5b5b5] text-[15px]">THE
                                 BOOK</a>
                         </li>
-                        <li
-                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
-                            <a href="DontTell.html#theMovie" class="block text-black font-semibold">THE MOVIE</a>
+                        <li class="px-6 py-2 transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#theMovie" class="block text-[#b5b5b5] text-[15px]">THE MOVIE</a>
                         </li>
                     </ul>
                 </li>
-                <li class="text-[17px] font-semibold">
-                    <a href="rightside.html" class="block px-4 py-2 text-black">THE RIGHT SIDE OF THE WRONG</a>
+
+                <li class="text-[17px]">
+                    <a href="rightside.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">THE RIGHT SIDE OF THE
+                        WRONG</a>
                 </li>
-                <li class="text-[17px] font-semibold">
-                    <a href="contactus.html" class="block px-4 py-2 text-black">CONTACT</a>
+                <li class="text-[17px]">
+                    <a href="contactus.html" class="block px-4 py-2 text-[#b5b5b5] text-xl  ">CONTACT</a>
                 </li>
             </ul>
         </div>
-        <div id="mobile-menu-icon" class="lg:hidden flex items-center z-20 cursor-pointer">
+
+
+        <div id="mobile-menu-icon" class="lg:hidden flex items-center z-20 cursor-pointer absolute right-3 top-3">
             <img id="menu-icon" src="https://img.icons8.com/?size=100&id=120374&format=png&color=FFFFFF" alt="Menu Icon"
-                class="w-8 h-8" />
+                class="w-6 h-6" />
         </div>
 
 
@@ -121,58 +141,73 @@
 
     <!-- //main slider -->
     <section class="MainSlider">
-        <main class="fade lg:h-screen h-[60vh] w-full relative overflow-hidden" id="sliderPanel">
-            <!-- Set 'relative' positioning for the container -->
+        <main class="slider-container lg:h-screen h-[37%] w-full relative overflow-hidden" id="sliderPanel">
+            <!-- Slider Articles -->
+            <article class="slider-slide active-slide">
 
-            <article class="relative">
-                <div class="absolute inset-0">
-                    <!-- Image 1 -->
-                    <img class="w-full h-full object-cover" src="./Assets/Home/homepageImg.jpeg" alt="">
-                    <!-- Black Tint Overlay -->
-                    <div class="absolute inset-0 bg-black opacity-70"></div>
-                </div>
-                <div class="absolute inset-0 flex items-center justify-center mt-2">
-                    <p class="lg:text-[85px] text-[40px] text-[#ececec] tracking-[0.2em] font-bold text-center px-4 
-                        sm:text-[60px] sm:px-2 
-                        xs:text-[45px] xs:px-1">
+
+                <!-- Image 1 -->
+                <img class="w-full h-full object-cover slider-image" src="./Assets/Home/homepageImg.jpeg" alt="">
+                <!-- Black Tint Overlay -->
+                <div class="absolute inset-0 bg-black opacity-70"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <p class="lg:text-[85px] text-[20px] text-[#ececec] tracking-[0.2em] font-bold text-center px-4 
+                    sm:text-[30px] sm:px-2 
+                    xs:text-[45px] xs:px-1">
                         JUSTICE CAN BE <br> TELLING...
                     </p>
                 </div>
             </article>
 
-            <article class="relative">
-                <div class="absolute inset-0">
-                    <!-- Image 2 -->
-                    <img class="w-full h-full object-cover" src="./Assets/Home/homePageImgTwo.jpeg" alt="">
-                    <!-- Black Tint Overlay -->
-                    <div class="absolute inset-0 bg-black opacity-80"></div>
-                </div>
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <p class="text-[85px] text-white font-bold text-center px-4 
-                        sm:text-[60px] sm:px-2 
-                        xs:text-[45px] xs:px-1">
-                    </p>
-                </div>
+            <article class="slider-slide active-slide">
+
+                <!-- Image 2 -->
+                <img class="w-full h-full object-cover slider-image" src="./Assets/Home/homePageImgTwo.jpeg" alt="">
+                <!-- Black Tint Overlay -->
+                <div class="absolute inset-0 bg-black opacity-80"></div>
             </article>
 
-            <article class="relative">
-                <div class="absolute inset-0">
-                    <!-- Image 3 -->
-                    <img class="w-full h-full object-cover" src="./Assets/Home/homepageImgThree.jpeg" alt="">
-                    <!-- Black Tint Overlay -->
-                    <div class="absolute inset-0 bg-black opacity-60"></div>
+            <article class="slider-slide active-slide">
+                <div class="absolute top-1/2 left-5 transform -translate-y-1/2 z-20 arrow" id="leftArrow">
+                    <img src="https://img.icons8.com/?size=100&id=40217&format=png&color=FFFFFF" alt="Left Arrow"
+                        class="w-6 h-6">
                 </div>
+                <div class="absolute top-1/2 right-5 transform -translate-y-1/2 z-20 arrow" id="rightArrow">
+                    <img src="https://img.icons8.com/?size=100&id=7849&format=png&color=FFFFFF" alt="Right Arrow"
+                        class="w-6 h-6">
+                </div>
+                <!-- Image 3 -->
+                <img class="w-full h-full object-cover slider-image" src="./Assets/Home/homepageImgThree.jpeg" alt="">
+                <!-- Black Tint Overlay -->
+                <div class="absolute inset-0 bg-black opacity-60"></div>
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <p class="lg:text-[85px] text-[40px] text-[#ececec] tracking-[0.2em] font-bold text-center px-4 
-                                        sm:text-[60px] sm:px-2 
-                                        xs:text-[45px] xs:px-1">
+                    <p class="lg:text-[85px] text-[20px] text-[#ececec] tracking-[0.2em] font-bold text-center px-4 
+                                    sm:text-[30px] sm:px-2 
+                                    xs:text-[45px] xs:px-1">
                         JUSTICE CAN BE <br> TELLING...
                     </p>
                 </div>
             </article>
+
+            <!-- Pagination Dots -->
+            <div class="">
+                <!-- Arrow Buttons -->
+                <div
+                    class="arrow-btn prev-arrow dot active-dot absolute top-1/2 left-5 transform -translate-y-1/2 z-20 ">
+                    <img src="https://img.icons8.com/?size=100&id=40217&format=png&color=FFFFFF" alt="Previous Arrow"
+                        class="w-6 h-6">
+                </div>
+                <div class="arrow-btn next-arrow dot absolute top-1/2 right-5 transform -translate-y-1/2 z-20">
+                    <img src="https://img.icons8.com/?size=100&id=7849&format=png&color=FFFFFF" alt="Next Arrow"
+                        class="w-6 h-6">
+                </div>
+                <div class="arrow-btn next-arrow dot">
+
+                </div>
+            </div>
+
         </main>
     </section>
-
 
 
 
@@ -180,7 +215,7 @@
     <!-- //main home compoent -->
     <aside class="mainHomePageBlog">
 
-        <h3>Stephen Roche</h3>
+        <h3>STEPHEN ROCHE</h3>
         <p>The real Australian story that changed the way we protect our children and was a catalyst that ultimately led
             to a
             Royal Commission into Institutional Child Sexual Abuse.</p>
@@ -203,7 +238,7 @@
             and take on the Anglican Church.</p>
 
         <h4>
-            The Right Side of Wrong
+            THE RIGHT SIDE OF WRONG
 
         </h4>
 
@@ -241,8 +276,8 @@
 
 
     <footer
-        class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row h-auto lg:h-[24vh] w-screen items-center justify-between py-7 mt-6">
-        <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center lg:text-left">
+        class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row lg:h-[24vh] gap-10 w-screen items-center justify-between py-7 mt-1">
+        <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center ">
             © 2024 Stephen Roche
         </article>
 
@@ -253,31 +288,29 @@
         </article>
 
         <article
-            class="FooterRight flex-1 flex flex-col lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
-            <span class="flex flex-col gap-2 justify-center items-center p-1">
+            class="FooterRight flex-1 flex flex-row lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
+            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
                 Book <a href="https://www.facebook.com/dont.tell.book">
                     <img class="w-[30px] lg:w-[35px]"
-                        src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+                        src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
                 </a>
             </span>
 
-            <span class="flex flex-col gap-2 justify-center items-center p-1">
+            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
                 Movie <a href="https://www.facebook.com/DontTellMovie">
                     <img class="w-[30px] lg:w-[35px]"
-                        src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+                        src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
                 </a>
             </span>
 
-            <span class="flex flex-col gap-2 justify-center items-center p-1">
+            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
                 Stephen <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
                     <img class="w-[30px] lg:w-[35px]"
-                        src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+                        src="https://img.icons8.com/?size=100&id=8808&format=png&color=767676" alt="">
                 </a>
             </span>
         </article>
     </footer>
-
-
 
 
 
@@ -287,6 +320,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+    <!-- //fade slick-carousel -->
     <script type="text/javascript">
         $('.fade').slick({
             dots: true,
@@ -300,6 +339,8 @@
 
         });
     </script>
+
+
 
 
 

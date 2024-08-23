@@ -8,6 +8,11 @@
     <link href="public/tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/Global.css">
 
+
+
+
+
+
 </head>
 
 <body>
@@ -16,34 +21,42 @@
         <!-- Tint Overlay -->
         <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
 
-        <div class="navLeft text-white lg:flex hidden items-center flex-1 flex-row gap-3 justify-center relative z-10">
+        <div
+            class="navLeft text-white flex flex-row items-center flex-1 gap-3 relative z-10 md:flex-row lg:justify-center">
             <a href="DontTell.html#DontTellSection" rel="noopener noreferrer">
                 <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-book-cover-345x500px-156h.png"
-                    class="w-[89px]" alt="Book Cover">
+                    class="w-[83px] lg:w-[89px]" alt="Book Cover">
             </a>
             <a href="DontTell.html#theMovie" rel="noopener noreferrer">
                 <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-the-movie-1920w.png"
-                    class="w-[89px]" alt="Movie Cover">
+                    class="w-[83px] lg:w-[89px]" alt="Movie Cover">
             </a>
             <a href="rightside.html" rel="noopener noreferrer">
                 <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/right-side-of-wrong-1-1-1--1920w.png"
-                    class="w-[89px]" alt="Right Side Cover">
+                    class="w-[83px] lg:w-[89px]" alt="Right Side Cover">
             </a>
         </div>
 
         <div class="navRight w-full lg:block hidden text-white flex-2 mt-4 relative z-10">
             <ul class="flex flex-row gap-4 items-center cursor-pointer justify-center">
-                <li id="home-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                <li id="home-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="index.html" class="block px-0 py-2">HOME</a>
                 </li>
-                <li id="about-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                <li id="about-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="/about.html" class="block px-0 py-2">ABOUT</a>
                 </li>
+
                 <li id="dont-tell-link"
-                    class="relative text-[17px] text-gray-400 group transition-colors duration-300 ease">
-                    <a href="DontTell.html" class="block px-3 py-1">DON'T TELL</a>
+                    class="relative text-[17px] text-gray-400 group transition-colors duration-300 ease hover:text-white">
+                    <a href="DontTell.html" class="px-2 py-1 flex items-center gap-2" id="dontTellNavLink">
+                        DON'T TELL
+                        <img id="dontTellIcon" src="https://img.icons8.com/?size=100&id=2760&format=png&color=FFFFFF"
+                            width="11" alt="arrow" class="transition-transform duration-300 ease-in-out">
+                    </a>
                     <!-- Dropdown Menu -->
-                    <ul
+                    <ul id="dropdownDontTell"
                         class="absolute left-0 bg-white text-gray-400 hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
                         <li
                             class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
@@ -55,53 +68,63 @@
                         </li>
                     </ul>
                 </li>
-                <li id="right-side-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+
+                <li id="right-side-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="rightside.html" class="block px-0 py-2">THE RIGHT SIDE OF THE WRONG</a>
                 </li>
-                <li id="contact-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                <li id="contact-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="contactus.html" class="block px-0 py-2">CONTACT</a>
                 </li>
             </ul>
         </div>
 
         <div id="mobile-menu"
-            class="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-50 backdrop-blur-lg text-black flex flex-col items-center justify-center lg:hidden hidden z-10 animate-fadeRight">
-            <ul class="flex flex-col gap-4">
-                <li class="text-[17px] font-semibold">
-                    <a href="index.html" class="block px-4 py-2 text-black">HOME</a>
+            class="fixed top-0 py-9 left-0 w-screen h-[auto] bg-[#272a2f] flex flex-col items-center justify-center lg:hidden hidden z-10 animate-slideDown">
+            <ul class="flex flex-col gap-2 items-center">
+                <li class="text-[17px]">
+                    <a href="index.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">HOME</a>
                 </li>
-                <li class="text-[17px] font-semibold">
-                    <a href="/about.html" class="block px-4 py-2 text-black">ABOUT</a>
+                <li class="text-[17px]">
+                    <a href="/about.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">ABOUT</a>
                 </li>
-                <li class="relative text-[17px] font-semibold">
-                    <a href="DontTell.html" class="block px-4 py-2 text-black">DON'T TELL</a>
+
+                <li id="dont-tell-link-menu" class="relative text-[17px] group transition-colors duration-300 ease">
+                    <a class="px-2 py-1 flex items-center gap-2 text-[#b5b5b5] text-xl" id="dontTellNavLink-menu">
+                        DON'T TELL
+                        <img id="arrowIconDontUp-menu"
+                            src="https://img.icons8.com/?size=100&id=2760&format=png&color=FFFFFF" width="11"
+                            alt="arrow" class="transition-transform duration-300 ease-in-out">
+                    </a>
                     <!-- Dropdown Menu -->
-                    <ul
-                        class="absolute left-0 bg-white hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
-                        <li
-                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
+                    <ul id="dropdownDontTellNew-menu"
+                        class="left-0 text-gray-400 hidden transition-opacity duration-300 ease-in-out opacity-0 animate-slideFadeIn">
+                        <li class="px-6 py-2 transition-colors duration-50 whitespace-nowrap">
                             <a href="DontTell.html#DontTellSection"
-                                class="block text-[19px] text-black font-semibold">THE BOOK</a>
+                                class="block text-[19px] text-[#b5b5b5] text-[15px]">THE
+                                BOOK</a>
                         </li>
-                        <li
-                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
-                            <a href="DontTell.html#theMovie" class="block text-black font-semibold">THE MOVIE</a>
+                        <li class="px-6 py-2 transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#theMovie" class="block text-[#b5b5b5] text-[15px]">THE MOVIE</a>
                         </li>
                     </ul>
                 </li>
-                <li class="text-[17px] font-semibold">
-                    <a href="rightside.html" class="block px-4 py-2 text-black">THE RIGHT SIDE OF THE WRONG</a>
+
+                <li class="text-[17px]">
+                    <a href="rightside.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">THE RIGHT SIDE OF THE
+                        WRONG</a>
                 </li>
-                <li class="text-[17px] font-semibold">
-                    <a href="contactus.html" class="block px-4 py-2 text-black">CONTACT</a>
+                <li class="text-[17px]">
+                    <a href="contactus.html" class="block px-4 py-2 text-[#b5b5b5] text-xl  ">CONTACT</a>
                 </li>
             </ul>
         </div>
 
 
-        <div id="mobile-menu-icon" class="lg:hidden flex items-center z-20 cursor-pointer">
+        <div id="mobile-menu-icon" class="lg:hidden flex items-center z-20 cursor-pointer absolute right-3 top-3">
             <img id="menu-icon" src="https://img.icons8.com/?size=100&id=120374&format=png&color=FFFFFF" alt="Menu Icon"
-                class="w-8 h-8" />
+                class="w-6 h-6" />
         </div>
 
     </nav>
@@ -113,49 +136,66 @@
 
 
 
-<section class="aboutUsSection flex flex-col items-center gap-4 py-8 px-4 sm:px-8 lg:px-[100px] mt-4">
-    <h1 class="text-[32px] sm:text-[45px] lg:text-[55px] text-[#4c4c4c] font-thin text-center">Stephen Roche</h1>
+    <section class="aboutUsSection flex flex-col items-center gap-4 py-8 px-4 sm:px-8 lg:px-[100px] mt-4">
+        <h1 class="text-[30px] font-[300] sm:text-[45px] tracking-[15px] lg:text-[55px] text-[#4c4c4c] text-center">
+            STEPHEN ROCHE</h1>
 
-    <main class="w-full flex justify-center">
-        <div class="py-6 px-4 sm:py-8 sm:px-6 md:py-10 md:px-9 bg-[#ececec] flex flex-col sm:flex-row gap-4 sm:gap-5">
-            <img class="w-[160px] h-[200px] sm:w-[200px] sm:h-[250px] md:w-[240px] md:h-[300px]"
-                src="./Assets/About/aboutUsOne.webp" alt="">
-            <img class="w-[160px] h-[200px] sm:w-[200px] sm:h-[250px] md:w-[240px] md:h-[300px]"
-                src="./Assets/About/aboutUstwo.webp" alt="">
-        </div>
-    </main>
-
-    <article
-        class="flex leading-7 flex-col gap-3 text-gray-600 pt-4 mt-4 text-[16px] sm:text-[17px] md:text-[19px] text-center sm:text-left">
-        <p>Stephen Roche was raised on a dairy farm on the Darling Downs and is the ninth youngest of ten children. He
-            has seven older brothers.</p>
-        <p>He fell into a career in the law when he applied for a job as an ‘Articled Law Clerk’ with a local law firm
-            in 1981. He is now the longest serving member of that firm. Formerly the Managing Partner and CEO, he has
-            been an integral part of growing from a single office in Toowoomba to now having a national presence. He has
-            spearheaded Shine Lawyers through a considerable growth period over the last two decades, and it is now the
-            third largest plaintiff litigation law firm in Australia.</p>
-        <p>Stephen was among the first solicitors in Queensland to be awarded Specialist Accreditation in Personal
-            Injuries by the Queensland Law Society. Stephen holds a Bachelor of Laws and a Masters of Laws degree from
-            QUT. He is a past President of the Australian Plaintiff Lawyers Association (Queensland Branch), and a past
-            member of the National Executive. Stephen has made a significant contribution to the protection of civil and
-            common law rights for all Australian citizens. Regarded as an ‘activist’, he is passionate in his belief
-            that the rights of us all are being eroded by our governments, and he is not afraid to stand up against
-            insurance companies and corporate Australia.</p>
-        <p>A progressive thinker and strategist, he has played an active role over many years in meeting with
-            governments and with various stakeholder bodies as an advocate for people’s rights. He has been involved in
-            many high profile cases including major group actions against multinationals like McDonalds, and litigation
-            against powerful institutions like churches that have breached their duty of care.</p>
-        <p>His innovative attitude in a corporate workplace also saw him direct The Shine Centre of Learning initiative.
-            The vision began with turning a property in South-East Queensland into a residential place of learning,
-            where staff go to acquire skills, knowledge and attitudes from national and international experts.</p>
-        <p>He is a Fellow of the Australian Institute of Management, a Graduate of the Australian Institute of Company
-            Directors, and an active member of TEC.</p>
-        <p>Stephen is married to Wendy and they have four adult children.</p>
-        <p>Don’t Tell is Stephen’s first book.</p>
-    </article>
-</section>
+        <main class="w-full flex justify-center">
+            <div
+                class="py-6 px-4 sm:py-8 sm:px-6 md:py-10 md:px-9 bg-[#ececec] flex flex-row sm:flex-row gap-4 sm:gap-5">
+                <a class="swipebox" href="./Assets/About/aboutUsOne.webp" title="About Us One">
+                    <img class="w-[160px] h-[200px] sm:w-[200px] sm:h-[250px] md:w-[240px] md:h-[300px]"
+                        src="./Assets/About/aboutUsOne.webp" alt="About Us One">
+                </a>
+                <a class="swipebox" href="./Assets/About/aboutUstwo.webp" title="About Us Two">
+                    <img class="w-[160px] h-[200px] sm:w-[200px] sm:h-[250px] md:w-[240px] md:h-[300px]"
+                        src="./Assets/About/aboutUstwo.webp" alt="About Us Two">
+                </a>
+            </div>
+        </main>
 
 
+        <article
+            class="flex leading-7 flex-col gap-3 text-gray-600 pt-4 mt-4 text-[16px] sm:text-[17px] md:text-[19px] text-center sm:text-left">
+            <p>Stephen Roche was raised on a dairy farm on the Darling Downs and is the ninth youngest of ten children.
+                He
+                has seven older brothers.</p>
+            <p>He fell into a career in the law when he applied for a job as an ‘Articled Law Clerk’ with a local law
+                firm
+                in 1981. He is now the longest serving member of that firm. Formerly the Managing Partner and CEO, he
+                has
+                been an integral part of growing from a single office in Toowoomba to now having a national presence. He
+                has
+                spearheaded Shine Lawyers through a considerable growth period over the last two decades, and it is now
+                the
+                third largest plaintiff litigation law firm in Australia.</p>
+            <p>Stephen was among the first solicitors in Queensland to be awarded Specialist Accreditation in Personal
+                Injuries by the Queensland Law Society. Stephen holds a Bachelor of Laws and a Masters of Laws degree
+                from
+                QUT. He is a past President of the Australian Plaintiff Lawyers Association (Queensland Branch), and a
+                past
+                member of the National Executive. Stephen has made a significant contribution to the protection of civil
+                and
+                common law rights for all Australian citizens. Regarded as an ‘activist’, he is passionate in his belief
+                that the rights of us all are being eroded by our governments, and he is not afraid to stand up against
+                insurance companies and corporate Australia.</p>
+            <p>A progressive thinker and strategist, he has played an active role over many years in meeting with
+                governments and with various stakeholder bodies as an advocate for people’s rights. He has been involved
+                in
+                many high profile cases including major group actions against multinationals like McDonalds, and
+                litigation
+                against powerful institutions like churches that have breached their duty of care.</p>
+            <p>His innovative attitude in a corporate workplace also saw him direct The Shine Centre of Learning
+                initiative.
+                The vision began with turning a property in South-East Queensland into a residential place of learning,
+                where staff go to acquire skills, knowledge and attitudes from national and international experts.</p>
+            <p>He is a Fellow of the Australian Institute of Management, a Graduate of the Australian Institute of
+                Company
+                Directors, and an active member of TEC.</p>
+            <p>Stephen is married to Wendy and they have four adult children.</p>
+            <p>Don’t Tell is Stephen’s first book.</p>
+        </article>
+    </section>
 
 
 
@@ -164,45 +204,52 @@
 
 
 
-<footer
-    class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row h-auto lg:h-[24vh] w-screen items-center justify-between py-7 mt-6">
-    <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center lg:text-left">
-        © 2024 Stephen Roche
-    </article>
 
-    <article
-        class="Footercenter flex-1 flex flex-col lg:flex-row gap-3 lg:gap-6 justify-center lg:justify-center items-center lg:items-center mt-4 lg:mt-0">
-        <a class="text-blue-400 text-base lg:text-xl" href="/PrivacyPolicy.html">Privacy Policy</a>
-        <a href="#" class="text-blue-400 text-base lg:text-xl">Website by Indigo Web</a>
-    </article>
+    <footer
+        class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row lg:h-[24vh] gap-10 w-screen items-center justify-between py-7 mt-1">
+        <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center ">
+            © 2024 Stephen Roche
+        </article>
 
-    <article
-        class="FooterRight flex-1 flex flex-col lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
-        <span class="flex flex-col gap-2 justify-center items-center p-1">
-            Book <a href="https://www.facebook.com/dont.tell.book">
-                <img class="w-[30px] lg:w-[35px]"
-                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
-            </a>
-        </span>
+        <article
+            class="Footercenter flex-1 flex flex-col lg:flex-row gap-3 lg:gap-6 justify-center lg:justify-center items-center lg:items-center mt-4 lg:mt-0">
+            <a class="text-blue-400 text-base lg:text-xl" href="/PrivacyPolicy.html">Privacy Policy</a>
+            <a href="#" class="text-blue-400 text-base lg:text-xl">Website by Indigo Web</a>
+        </article>
 
-        <span class="flex flex-col gap-2 justify-center items-center p-1">
-            Movie <a href="https://www.facebook.com/DontTellMovie">
-                <img class="w-[30px] lg:w-[35px]"
-                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
-            </a>
-        </span>
+        <article
+            class="FooterRight flex-1 flex flex-row lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
+            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
+                Book <a href="https://www.facebook.com/dont.tell.book">
+                    <img class="w-[30px] lg:w-[35px]"
+                        src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
+                </a>
+            </span>
 
-        <span class="flex flex-col gap-2 justify-center items-center p-1">
-            Stephen <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
-                <img class="w-[30px] lg:w-[35px]"
-                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
-            </a>
-        </span>
-    </article>
-</footer>
+            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
+                Movie <a href="https://www.facebook.com/DontTellMovie">
+                    <img class="w-[30px] lg:w-[35px]"
+                        src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
+                </a>
+            </span>
+
+            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
+                Stephen <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
+                    <img class="w-[30px] lg:w-[35px]"
+                        src="https://img.icons8.com/?size=100&id=8808&format=png&color=767676" alt="">
+                </a>
+            </span>
+        </article>
+    </footer>
 
 
     <script src="./Javascript/index.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.swipebox').swipebox();
+        });
+    </script>
+
 </body>
 
 </html>

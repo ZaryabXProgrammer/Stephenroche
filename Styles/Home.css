@@ -8,10 +8,10 @@
 }
 
 .mainHomePageBlog h3 {
-    font-size: 60px;
+    font-size: 57px;
     text-align: center;
     color: #3d3d3d;
-    font-weight: lighter;
+    font-weight: 300;
     letter-spacing: 10px;
     margin-top: 20px;
 }
@@ -27,16 +27,24 @@
 }
 
 .mainHomePageBlog h4 {
-    font-size: 40px;
-    font-weight: lighter;
+    font-size: 37px;
+    font-weight: 350;
     color: #3d3d3d;
+    letter-spacing: 9px;
 }
 
 .mainHomePageBlog img {
     margin-top: 17px;
     margin-bottom: 22px;
     width: 350px;
-    height: 550px;
+    height: 530px;
+    transition: opacity 0.3s ease;
+
+}
+
+.mainHomePageBlog img:hover {
+    opacity: 0.7;
+
 }
 
 .mainHomePageBlog h5 {
@@ -136,14 +144,19 @@
     }
 
     .mainHomePageBlog h3 {
-        font-size: 30px;
-        letter-spacing: 2px;
+        font-size: 45px;
         margin-top: 5px;
+        margin-top: 40px;
+        font-weight: 400;
+        line-height: 47px;
+        width: 70%;
+        letter-spacing: 8px;
+        color: rgb(88, 88, 88);
     }
 
     .mainHomePageBlog p {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 18px;
+        line-height: 22px;
     }
 
     .mainHomePageBlog h4 {

@@ -18,34 +18,42 @@
         <!-- Tint Overlay -->
         <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
 
-        <div class="navLeft text-white lg:flex hidden items-center flex-1 flex-row gap-3 justify-center relative z-10">
+        <div class="navLeft text-white flex flex-row items-center flex-1 gap-3 relative z-10 md:flex-row lg:justify-center">
             <a href="DontTell.html#DontTellSection" rel="noopener noreferrer">
                 <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-book-cover-345x500px-156h.png"
-                    class="w-[89px]" alt="Book Cover">
+                    class="w-[83px] lg:w-[89px]" alt="Book Cover">
             </a>
             <a href="DontTell.html#theMovie" rel="noopener noreferrer">
                 <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/dont-tell-the-movie-1920w.png"
-                    class="w-[89px]" alt="Movie Cover">
+                    class="w-[83px] lg:w-[89px]" alt="Movie Cover">
             </a>
             <a href="rightside.html" rel="noopener noreferrer">
                 <img src="https://lirp.cdn-website.com/58aa9989/dms3rep/multi/opt/right-side-of-wrong-1-1-1--1920w.png"
-                    class="w-[89px]" alt="Right Side Cover">
+                    class="w-[83px] lg:w-[89px]" alt="Right Side Cover">
             </a>
         </div>
 
+
         <div class="navRight w-full lg:block hidden text-white flex-2 mt-4 relative z-10">
             <ul class="flex flex-row gap-4 items-center cursor-pointer justify-center">
-                <li id="home-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                <li id="home-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="index.html" class="block px-0 py-2">HOME</a>
                 </li>
-                <li id="about-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                <li id="about-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="/about.html" class="block px-0 py-2">ABOUT</a>
                 </li>
+        
                 <li id="dont-tell-link"
-                    class="relative text-[17px] text-gray-400 group transition-colors duration-300 ease">
-                    <a href="DontTell.html" class="block px-3 py-1">DON'T TELL</a>
+                    class="relative text-[17px] text-gray-400 group transition-colors duration-300 ease hover:text-white">
+                    <a href="DontTell.html" class="px-2 py-1 flex items-center gap-2" id="dontTellNavLink">
+                        DON'T TELL
+                        <img id="dontTellIcon" src="https://img.icons8.com/?size=100&id=2760&format=png&color=FFFFFF" width="11"
+                            alt="arrow" class="transition-transform duration-300 ease-in-out">
+                    </a>
                     <!-- Dropdown Menu -->
-                    <ul
+                    <ul id="dropdownDontTell"
                         class="absolute left-0 bg-white text-gray-400 hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
                         <li
                             class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
@@ -57,10 +65,13 @@
                         </li>
                     </ul>
                 </li>
-                <li id="right-side-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+        
+                <li id="right-side-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="rightside.html" class="block px-0 py-2">THE RIGHT SIDE OF THE WRONG</a>
                 </li>
-                <li id="contact-link" class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out">
+                <li id="contact-link"
+                    class="text-[17px] text-gray-400 transition-colors duration-300 ease-in-out hover:text-white">
                     <a href="contactus.html" class="block px-0 py-2">CONTACT</a>
                 </li>
             </ul>
@@ -102,9 +113,9 @@
         </div>
 
 
-        <div id="mobile-menu-icon" class="lg:hidden flex items-center z-20 cursor-pointer">
+        <div id="mobile-menu-icon" class="lg:hidden flex items-center z-20 cursor-pointer absolute right-3 top-3">
             <img id="menu-icon" src="https://img.icons8.com/?size=100&id=120374&format=png&color=FFFFFF" alt="Menu Icon"
-                class="w-8 h-8" />
+                class="w-6 h-6" />
         </div>
 
     </nav>
@@ -230,10 +241,9 @@
 
 
 
-
 <footer
-    class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row h-auto lg:h-[24vh] w-screen items-center justify-between py-7 mt-1">
-    <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center lg:text-left">
+    class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row lg:h-[24vh] gap-10 w-screen items-center justify-between py-7 mt-1">
+    <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center ">
         © 2024 Stephen Roche
     </article>
 
@@ -244,25 +254,25 @@
     </article>
 
     <article
-        class="FooterRight flex-1 flex flex-col lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
-        <span class="flex flex-col gap-2 justify-center items-center p-1">
+        class="FooterRight flex-1 flex flex-row lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
+        <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
             Book <a href="https://www.facebook.com/dont.tell.book">
                 <img class="w-[30px] lg:w-[35px]"
-                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+                    src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
             </a>
         </span>
 
-        <span class="flex flex-col gap-2 justify-center items-center p-1">
+        <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
             Movie <a href="https://www.facebook.com/DontTellMovie">
                 <img class="w-[30px] lg:w-[35px]"
-                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+                    src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
             </a>
         </span>
 
-        <span class="flex flex-col gap-2 justify-center items-center p-1">
+        <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
             Stephen <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
-                <img class="w-[30px] lg:w-[35px]"
-                    src="https://img.icons8.com/?size=100&id=118467&format=png&color=767676" alt="">
+                <img class="w-[30px] lg:w-[35px]" src="https://img.icons8.com/?size=100&id=8808&format=png&color=767676"
+                    alt="">
             </a>
         </span>
     </article>
