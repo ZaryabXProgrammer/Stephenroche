@@ -4,6 +4,7 @@ const menuIconClosed =
   "https://img.icons8.com/?size=100&id=8113&format=png&color=959595";
 const menuIconOpen =
   "https://img.icons8.com/?size=100&id=23537&format=png&color=959595";
+const getAllDotArrowBtn = document.getElementById("dotArrowBtnBox");
 
 document
   .getElementById("mobile-menu-icon")
@@ -11,6 +12,13 @@ document
     const isMenuVisible = !mobileMenu.classList.contains("hidden");
     mobileMenu.classList.toggle("hidden");
     menuIcon.src = isMenuVisible ? menuIconClosed : menuIconOpen;
+
+    // Show or hide getAllDotArrowBtn based on the menu visibility
+    if (mobileMenu.classList.contains("hidden")) {
+      getAllDotArrowBtn.style.display = "block";
+    } else {
+      getAllDotArrowBtn.style.display = "none";
+    }
   });
 
 //NAVBAR DONT TELL ICON ARROW

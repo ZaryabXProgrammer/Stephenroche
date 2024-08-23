@@ -87,7 +87,7 @@ slider css */
 
 .arrow {
     cursor: pointer;
-    z-index: 20;
+    z-index: 5;
 }
 
 .dot {

@@ -598,6 +598,10 @@ video {
   top: 0.75rem;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -608,6 +612,18 @@ video {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mb-2 {
@@ -716,6 +732,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .w-6 {
@@ -1135,6 +1155,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
 }
 
 .font-\[300\] {

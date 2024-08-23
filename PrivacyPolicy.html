@@ -78,36 +78,40 @@
         </div>
 
         <div id="mobile-menu"
-            class="fixed top-0 left-0 w-screen h-screen bg-gray-300 bg-opacity-50 backdrop-blur-lg text-black flex flex-col items-center justify-center lg:hidden hidden z-10 animate-fadeRight">
-            <ul class="flex flex-col gap-4">
-                <li class="text-[17px] font-semibold">
-                    <a href="index.html" class="block px-4 py-2 text-black">HOME</a>
+            class="fixed top-0 py-9 left-0 w-screen h-[auto] bg-[#272a2f] flex flex-col items-center justify-center lg:hidden hidden z-20 animate-slideDown">
+            <ul class="flex flex-col gap-2 items-center">
+                <li class="text-[17px]">
+                    <a href="index.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">HOME</a>
                 </li>
-                <li class="text-[17px] font-semibold">
-                    <a href="/about.html" class="block px-4 py-2 text-black">ABOUT</a>
+                <li class="text-[17px]">
+                    <a href="/about.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">ABOUT</a>
                 </li>
-                <li class="relative text-[17px] font-semibold">
-                    <a href="DontTell.html" class="block px-4 py-2 text-black">DON'T TELL</a>
+        
+                <li id="dont-tell-link-menu" class="relative text-[17px] group transition-colors duration-300 ease">
+                    <a class="px-2 py-1 flex items-center gap-2 text-[#b5b5b5] text-xl" id="dontTellNavLink-menu">
+                        DON'T TELL
+                        <img id="arrowIconDontUp-menu" src="https://img.icons8.com/?size=100&id=2760&format=png&color=FFFFFF"
+                            width="11" alt="arrow" class="transition-transform duration-300 ease-in-out">
+                    </a>
                     <!-- Dropdown Menu -->
-                    <ul
-                        class="absolute left-0 bg-white hidden group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100 animate-slideFadeIn">
-                        <li
-                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
-                            <a href="DontTell.html#DontTellSection"
-                                class="block text-[19px] text-black font-semibold">THE
+                    <ul id="dropdownDontTellNew-menu"
+                        class="left-0 text-gray-400 hidden transition-opacity duration-300 ease-in-out opacity-0 animate-slideFadeIn ">
+                        <li class="px-6 py-2 transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#DontTellSection" class="block text-[#b5b5b5] text-[18px] text-center">THE
                                 BOOK</a>
                         </li>
-                        <li
-                            class="px-6 py-2 hover:bg-gray-900 hover:text-white transition-colors duration-50 whitespace-nowrap">
-                            <a href="DontTell.html#theMovie" class="block text-black font-semibold">THE MOVIE</a>
+                        <li class="px-6 py-2 transition-colors duration-50 whitespace-nowrap">
+                            <a href="DontTell.html#theMovie" class="block text-[#b5b5b5] text-[18px] text-center">THE MOVIE</a>
                         </li>
                     </ul>
                 </li>
-                <li class="text-[17px] font-semibold">
-                    <a href="rightside.html" class="block px-4 py-2 text-black">THE RIGHT SIDE OF THE WRONG</a>
+        
+                <li class="text-[17px]">
+                    <a href="rightside.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">THE RIGHT SIDE OF THE
+                        WRONG</a>
                 </li>
-                <li class="text-[17px] font-semibold">
-                    <a href="contactus.html" class="block px-4 py-2 text-black">CONTACT</a>
+                <li class="text-[17px]">
+                    <a href="contactus.html" class="block px-4 py-2 text-[#b5b5b5] text-xl  ">CONTACT</a>
                 </li>
             </ul>
         </div>
