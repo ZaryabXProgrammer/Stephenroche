@@ -66,7 +66,6 @@ function toggleDropdown() {
 arrowIcon.addEventListener("click", toggleDropdown);
 
 //moving slides
-
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slider-slide");
   const dots = document.querySelectorAll(".dot");
@@ -112,26 +111,16 @@ document.addEventListener("DOMContentLoaded", function () {
   showSlide(currentSlide);
   startAutoplay();
 
-  // Event listeners for arrow buttons
-  document.getElementById("rightArrow").addEventListener("click", () => {
-    nextSlide();
-    stopAutoplay(); // Stop autoplay on manual slide change
-    startAutoplay(); // Restart autoplay
-  });
-
-  document.getElementById("leftArrow").addEventListener("click", () => {
+  // Event listeners for arrow buttons using class names
+  document.querySelector(".prev-arrow").addEventListener("click", () => {
     prevSlide();
     stopAutoplay(); // Stop autoplay on manual slide change
     startAutoplay(); // Restart autoplay
   });
 
-  // Event listeners for dots
-  dots.forEach((dot, i) => {
-    dot.addEventListener("click", () => {
-      currentSlide = i;
-      showSlide(currentSlide);
-      stopAutoplay(); // Stop autoplay on manual slide change
-      startAutoplay(); // Restart autoplay
-    });
+  document.querySelector(".next-arrow").addEventListener("click", () => {
+    nextSlide();
+    stopAutoplay(); // Stop autoplay on manual slide change
+    startAutoplay(); // Restart autoplay
   });
 });

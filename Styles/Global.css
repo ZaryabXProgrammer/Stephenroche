@@ -87,16 +87,12 @@ slider css */
 
 .arrow {
     cursor: pointer;
-    z-index: 5;
+    z-index: 20;
 }
 
-.dot {
-   
-}
+.dot {}
 
-.active-dot {
-   
-}
+.active-dot {}
 
 .slider-image {
     width: 100%;
