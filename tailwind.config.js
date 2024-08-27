@@ -20,6 +20,13 @@ module.exports = {
         slideFadeIn: "slideFadeIn 0.5s ease-in-out forwards",
         fadeRight: "fadeRight 0.5s ease-in-out forwards",
       },
+      fontFamily: {
+        montserrat: ['"Montserrat"', "sans-serif"], // Add Montserrat
+        opensans: ['"Open Sans"', "sans-serif"], // Add Open Sans
+      },
+      colors: {
+        grayCustom: "rgba(153, 153, 153, 1)", // Custom gray color
+      },
     },
   },
   plugins: [],

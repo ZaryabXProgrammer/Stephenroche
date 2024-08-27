@@ -1,5 +1,5 @@
 .mainHomePageBlog {
-    padding: 10px 90px;
+    padding: 10px 120px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -8,12 +8,14 @@
 }
 
 .mainHomePageBlog h3 {
-    font-size: 57px;
+    font-size: 50px;
     text-align: center;
-    color: #3d3d3d;
-    font-weight: 300;
-    letter-spacing: 10px;
-    margin-top: 20px;
+    color: rgba(76, 76, 76);
+    font-weight: 400;
+    letter-spacing: 9px;
+    margin-top: 5rem;
+    font-family: "Montserrat", sans-serif;
+    /* Add this line */
 }
 
 .mainHomePageBlog p {
@@ -21,16 +23,19 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    color: gray;
+
     font-size: 19px;
     margin: 3px 0;
 }
 
 .mainHomePageBlog h4 {
-    font-size: 37px;
+    font-size: 34px;
     font-weight: 350;
-    color: #3d3d3d;
-    letter-spacing: 9px;
+    color: rgb(76, 76, 76);
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin-top: 2rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 .mainHomePageBlog img {
@@ -48,9 +53,12 @@
 }
 
 .mainHomePageBlog h5 {
-    font-size: 30px;
-    color: #3d3d3d;
-    font-weight: lighter;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(76, 76, 76);
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 28px;
+
 }
 
 .mainHomePageBlog footer {
@@ -61,22 +69,35 @@
 }
 
 .mainHomePageBlog footer article {
-    font-size: 25px;
-    font-weight: bold;
-    color: #4c4c4c;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(76, 76, 76);
+    letter-spacing: 4px;
     margin: 2px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .mainHomePageBlog footer h5 {
-    color: red;
+    color: rgb(238, 75, 43);
     font-weight: bold;
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+
+.mainHomePageBlog h6 {
+    color: rgb(99, 99, 99);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1rem;
 }
 
 .mainHomePageBlog footer h6 a {
     color: #1677aa;
     cursor: pointer;
 }
+
+
 
 .mainHomePageBlog footer p {
     font-size: 22px;
@@ -144,19 +165,24 @@
     }
 
     .mainHomePageBlog h3 {
-        font-size: 45px;
-        margin-top: 5px;
-        margin-top: 40px;
+        font-size: 40px;
+        margin-top: 4rem;
+
         font-weight: 400;
         line-height: 47px;
         width: 70%;
         letter-spacing: 8px;
-        color: rgb(88, 88, 88);
+        margin-bottom: 15px;
+        color: #4c4c4c;
+
     }
 
     .mainHomePageBlog p {
         font-size: 18px;
         line-height: 22px;
+     
+            font-family: "Open Sans", sans-serif;
+            margin-bottom: 3px;
     }
 
     .mainHomePageBlog h4 {
@@ -164,27 +190,27 @@
     }
 
     .mainHomePageBlog img {
-        width: 250px;
-        height: 375px;
+        width: 96%;
+        height: 100%;
     }
 
     .mainHomePageBlog h5 {
         font-size: 20px;
+        text-align: start;
+
     }
 
     .mainHomePageBlog footer article {
         font-size: 18px;
-        text-align: center;
+
     }
 
     .mainHomePageBlog footer h5 {
-        font-size: 13px;
-        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
     }
 
-    .mainHomePageBlog h6 {
-        text-align: center;
-    }
+
 
     .mainHomePageBlog footer p {
         font-size: 16px;

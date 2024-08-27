@@ -5,22 +5,23 @@
 }
 
 .lowerBoxRightSide p {
-    font-size: 17px;
+   
     color: gray;
     margin: 2px 0;
 }
 
 .lowerBoxRightSide h3 {
     text-align: start;
-    font-size: 40px;
-    font-weight: lighter;
+    font-size: 28px;
+    font-weight: 400;
+    color: rgb(76, 76, 76);
+    margin-top: 1rem;
     letter-spacing: 7px;
+    font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 1024px) {
-    .lowerBoxRightSide p {
-        font-size: 15px;
-    }
+   
 
     .lowerBoxRightSide h3 {
         font-size: 32px;
@@ -29,9 +30,7 @@
 }
 
 @media (max-width: 768px) {
-    .lowerBoxRightSide p {
-        font-size: 14px;
-    }
+  
 
     .lowerBoxRightSide h3 {
         font-size: 28px;

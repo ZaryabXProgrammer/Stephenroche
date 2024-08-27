@@ -10,8 +10,12 @@
 
 
 
-
-
+    <script src="
+https://cdn.jsdelivr.net/npm/baguettebox.js@1.12.0/dist/baguetteBox.min.js
+"></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/baguettebox.js@1.12.0/dist/baguetteBox.min.css
+" rel="stylesheet">
 
 </head>
 
@@ -89,26 +93,29 @@
                 <li class="text-[17px]">
                     <a href="/about.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">ABOUT</a>
                 </li>
-        
+
                 <li id="dont-tell-link-menu" class="relative text-[17px] group transition-colors duration-300 ease">
                     <a class="px-2 py-1 flex items-center gap-2 text-[#b5b5b5] text-xl" id="dontTellNavLink-menu">
                         DON'T TELL
-                        <img id="arrowIconDontUp-menu" src="https://img.icons8.com/?size=100&id=2760&format=png&color=FFFFFF"
-                            width="11" alt="arrow" class="transition-transform duration-300 ease-in-out">
+                        <img id="arrowIconDontUp-menu"
+                            src="https://img.icons8.com/?size=100&id=2760&format=png&color=FFFFFF" width="11"
+                            alt="arrow" class="transition-transform duration-300 ease-in-out">
                     </a>
                     <!-- Dropdown Menu -->
                     <ul id="dropdownDontTellNew-menu"
                         class="left-0 text-gray-400 hidden transition-opacity duration-300 ease-in-out opacity-0 animate-slideFadeIn ">
                         <li class="px-6 py-2 transition-colors duration-50 whitespace-nowrap">
-                            <a href="DontTell.html#DontTellSection" class="block text-[#b5b5b5] text-[18px] text-center">THE
+                            <a href="DontTell.html#DontTellSection"
+                                class="block text-[#b5b5b5] text-[18px] text-center">THE
                                 BOOK</a>
                         </li>
                         <li class="px-6 py-2 transition-colors duration-50 whitespace-nowrap">
-                            <a href="DontTell.html#theMovie" class="block text-[#b5b5b5] text-[18px] text-center">THE MOVIE</a>
+                            <a href="DontTell.html#theMovie" class="block text-[#b5b5b5] text-[18px] text-center">THE
+                                MOVIE</a>
                         </li>
                     </ul>
                 </li>
-        
+
                 <li class="text-[17px]">
                     <a href="rightside.html" class="block px-4 py-2 text-[#b5b5b5] text-xl">THE RIGHT SIDE OF THE
                         WRONG</a>
@@ -134,18 +141,19 @@
 
 
 
-    <section class="aboutUsSection flex flex-col items-center gap-4 py-8 px-4 sm:px-8 lg:px-[100px] mt-4">
-        <h1 class="text-[30px] font-[300] sm:text-[45px] tracking-[15px] lg:text-[55px] text-[#4c4c4c] text-center">
+    <section class="aboutUsSection flex flex-col items-center gap-4 py-10 px-4 sm:px-8 lg:px-[100px] mt-7">
+        <h1
+            class="text-[50px] font-montserrat font-[400] sm:text-[45px] tracking-[7px] lg:text-[55px] text-[#4c4c4c] text-center">
             STEPHEN ROCHE</h1>
 
-        <main class="w-full flex justify-center">
+        <main class="w-full flex justify-center gallery">
             <div
                 class="py-6 px-4 sm:py-8 sm:px-6 md:py-10 md:px-9 bg-[#ececec] flex flex-row sm:flex-row gap-4 sm:gap-5">
-                <a class="swipebox" href="./Assets/About/aboutUsOne.webp" title="About Us One">
+                <a href="./Assets/About/aboutUsOne.webp" >
                     <img class="w-[160px] h-[200px] sm:w-[200px] sm:h-[250px] md:w-[240px] md:h-[300px]"
                         src="./Assets/About/aboutUsOne.webp" alt="About Us One">
                 </a>
-                <a class="swipebox" href="./Assets/About/aboutUstwo.webp" title="About Us Two">
+                <a href="./Assets/About/aboutUstwo.webp" >
                     <img class="w-[160px] h-[200px] sm:w-[200px] sm:h-[250px] md:w-[240px] md:h-[300px]"
                         src="./Assets/About/aboutUstwo.webp" alt="About Us Two">
                 </a>
@@ -153,8 +161,9 @@
         </main>
 
 
-        <article
-            class="flex leading-7 flex-col gap-3 text-gray-600 pt-4 mt-4 text-[16px] sm:text-[17px] md:text-[19px] text-center sm:text-left">
+
+
+        <article class="flex leading-7 flex-col gap-2 pt-4 mt-4 sm:text-[17px] md:text-[19px] text-center sm:text-left">
             <p>Stephen Roche was raised on a dairy farm on the Darling Downs and is the ninth youngest of ten children.
                 He
                 has seven older brothers.</p>
@@ -202,43 +211,60 @@
 
 
 
-
     <footer
-        class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row lg:h-[24vh] gap-10 w-screen items-center justify-between py-7 mt-1">
-        <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center ">
+        class="lowerFooter font-opensans font-400 overflow-hidden bg-[#222222] flex flex-col lg:flex-row lg:h-[23vh] gap-4 w-screen items-center justify-between py-7 mt-1">
+        <article class="Footerleft flex-1 text-grayCustom text-base lg:text-[16px] lg:ml-5 ml-1 text-center ">
             © 2024 Stephen Roche
         </article>
 
         <article
             class="Footercenter flex-1 flex flex-col lg:flex-row gap-3 lg:gap-6 justify-center lg:justify-center items-center lg:items-center mt-4 lg:mt-0">
-            <a class="text-blue-400 text-base lg:text-xl" href="/PrivacyPolicy.html">Privacy Policy</a>
-            <a href="#" class="text-blue-400 text-base lg:text-xl">Website by Indigo Web</a>
+            <a class="text-[#208cbc] text-base lg:text-[16px] hover:text-white transition-colors duration-300"
+                href="/PrivacyPolicy.html">Privacy Policy</a>
+            <a class="text-[#208cbc] text-base lg:text-[16px] hover:text-white transition-colors duration-300"
+                href="#">Website by
+                Indigo Web</a>
         </article>
 
         <article
-            class="FooterRight flex-1 flex flex-row lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
-            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
-                Book <a href="https://www.facebook.com/dont.tell.book">
-                    <img class="w-[30px] lg:w-[35px]"
+            class="FooterRight flex-1 flex flex-row lg:flex-row items-center lg:justify-center gap-4 lg:gap-12 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
+
+            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7">
+                Book
+                <a href="https://www.facebook.com/dont.tell.book">
+                    <img class="w-[30px] lg:w-[35px] transition-opacity duration-300 hover:opacity-70"
                         src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
                 </a>
             </span>
 
-            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
-                Movie <a href="https://www.facebook.com/DontTellMovie">
-                    <img class="w-[30px] lg:w-[35px]"
+            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7">
+                Movie
+                <a href="https://www.facebook.com/DontTellMovie">
+                    <img class="w-[30px] lg:w-[35px] transition-opacity duration-300 hover:opacity-70"
                         src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
                 </a>
             </span>
 
-            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
-                Stephen <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
-                    <img class="w-[30px] lg:w-[35px]"
+            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7">
+                Stephen
+                <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
+                    <img class="w-[30px] lg:w-[35px] transition-opacity duration-300 hover:opacity-70"
                         src="https://img.icons8.com/?size=100&id=8808&format=png&color=767676" alt="">
                 </a>
             </span>
+
         </article>
+
     </footer>
+
+    <script>
+        window.addEventListener('load', function () {
+            baguetteBox.run('.gallery', {
+                buttons: false
+            });
+
+        });
+    </script>
 
 
     <script src="./Javascript/index.js"></script>

@@ -17,6 +17,11 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 
 </head>
 
@@ -152,8 +157,8 @@
                 <!-- Black Tint Overlay -->
                 <div class="absolute inset-0 bg-black opacity-70"></div>
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <p class="lg:text-[85px] text-[20px] text-[#ececec] tracking-[0.2em] font-bold text-center px-4 
-                    sm:text-[30px] sm:px-2 
+                    <p class="lg:text-[85px] text-[28px] font-sans text-[#ececec] tracking-[0.2em] font-bold text-center px-4 
+                    sm:text-[35px] sm:px-2 
                     xs:text-[45px] xs:px-1">
                         JUSTICE CAN BE <br> TELLING...
                     </p>
@@ -175,9 +180,11 @@
                 <!-- Black Tint Overlay -->
                 <div class="absolute inset-0 bg-black opacity-60"></div>
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <p class="lg:text-[85px] text-[20px] text-[#ececec] tracking-[0.2em] font-bold text-center px-4 
-                                    sm:text-[30px] sm:px-2 
-                                    xs:text-[45px] xs:px-1">
+                    <p class="lg:text-[85px] text-[28px] text-[#ececec] tracking-[0.2em] font-bold text-center px-4 
+                                    sm:text-[35px] sm:px-2 
+                                    xs:text-[45px] xs:px-1
+                                    font-sans
+                                    ">
                         JUSTICE CAN BE <br> TELLING...
                     </p>
                 </div>
@@ -191,10 +198,11 @@
                         class="w-6 h-6">
                 </div>
                 <div class="arrow-btn next-arrow dot absolute top-1/2 right-5 transform -translate-y-1/2 z-20">
-                    <img src="https://img.icons8.com/?size=100&id=7849&format=png&color=FFFFFF" alt="Next Arrow" class="w-6 h-6">
+                    <img src="https://img.icons8.com/?size=100&id=7849&format=png&color=FFFFFF" alt="Next Arrow"
+                        class="w-6 h-6">
                 </div>
                 <div class="arrow-btn next-arrow dot absolute top-1/2 right-5 transform -translate-y-1/2 z-20">
-                   <span></span>
+                    <span></span>
                 </div>
             </div>
 
@@ -269,40 +277,49 @@
 
 
     <footer
-        class="lowerFooter overflow-hidden bg-[#222222] flex flex-col lg:flex-row lg:h-[24vh] gap-10 w-screen items-center justify-between py-7 mt-1">
-        <article class="Footerleft flex-1 text-[#767676] text-base lg:text-xl lg:ml-7 ml-1 text-center ">
+        class="lowerFooter font-opensans font-400 overflow-hidden bg-[#222222] flex flex-col lg:flex-row lg:h-[23vh] gap-4 w-screen items-center justify-between py-7 mt-1">
+        <article class="Footerleft flex-1 text-grayCustom text-base lg:text-[16px] lg:ml-5 ml-1 text-center ">
             © 2024 Stephen Roche
         </article>
 
         <article
             class="Footercenter flex-1 flex flex-col lg:flex-row gap-3 lg:gap-6 justify-center lg:justify-center items-center lg:items-center mt-4 lg:mt-0">
-            <a class="text-blue-400 text-base lg:text-xl" href="/PrivacyPolicy.html">Privacy Policy</a>
-            <a href="#" class="text-blue-400 text-base lg:text-xl">Website by Indigo Web</a>
+            <a class="text-[#208cbc] text-base lg:text-[16px] hover:text-white transition-colors duration-300"
+                href="/PrivacyPolicy.html">Privacy Policy</a>
+            <a class="text-[#208cbc] text-base lg:text-[16px] hover:text-white transition-colors duration-300"
+                href="#">Website by
+                Indigo Web</a>
         </article>
 
-        <article
-            class="FooterRight flex-1 flex flex-row lg:flex-row items-center lg:justify-center gap-4 lg:gap-3 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
-            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
-                Book <a href="https://www.facebook.com/dont.tell.book">
-                    <img class="w-[30px] lg:w-[35px]"
-                        src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
-                </a>
-            </span>
+    <article
+        class="FooterRight flex-1 flex flex-row lg:flex-row items-center lg:justify-center gap-4 lg:gap-12 text-gray-400 text-sm lg:text-base mt-4 lg:mt-0">
+    
+        <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7">
+            Book
+            <a href="https://www.facebook.com/dont.tell.book">
+                <img class="w-[30px] lg:w-[35px] transition-opacity duration-300 hover:opacity-70"
+                    src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
+            </a>
+        </span>
+    
+        <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7">
+            Movie
+            <a href="https://www.facebook.com/DontTellMovie">
+                <img class="w-[30px] lg:w-[35px] transition-opacity duration-300 hover:opacity-70"
+                    src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
+            </a>
+        </span>
+    
+        <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7">
+            Stephen
+            <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
+                <img class="w-[30px] lg:w-[35px] transition-opacity duration-300 hover:opacity-70"
+                    src="https://img.icons8.com/?size=100&id=8808&format=png&color=767676" alt="">
+            </a>
+        </span>
+    
+    </article>
 
-            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
-                Movie <a href="https://www.facebook.com/DontTellMovie">
-                    <img class="w-[30px] lg:w-[35px]"
-                        src="https://img.icons8.com/?size=100&id=98972&format=png&color=767676" alt="">
-                </a>
-            </span>
-
-            <span class="flex flex-col gap-2 justify-center items-center lg:p-1 lg:px-0 px-7 ">
-                Stephen <a href="https://www.linkedin.com/in/stephenroche5?originalSubdomain=au">
-                    <img class="w-[30px] lg:w-[35px]"
-                        src="https://img.icons8.com/?size=100&id=8808&format=png&color=767676" alt="">
-                </a>
-            </span>
-        </article>
     </footer>
 
 
