@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Right Side of the wrong</title>
     <link href="public/tailwind.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./Assets/Home/favicon-rightside.png">
     <link rel="stylesheet" href="./Styles/RightSide.css">
     <link rel="stylesheet" href="./Styles/Global.css">
 
@@ -13,7 +14,12 @@
 
     <!-- Fancybox JS -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/fancybox.umd.js"></script>
-
+    <script src="
+    https://cdn.jsdelivr.net/npm/baguettebox.js@1.12.0/dist/baguetteBox.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/baguettebox.js@1.12.0/dist/baguetteBox.min.css
+    " rel="stylesheet">
 
 </head>
 
@@ -148,7 +154,7 @@
             BOOK</h2>
 
         <div class="flex justify-center">
-            <span class="bg-[#ececec] p-7 flex items-center">
+            <span class="bg-[#ececec] p-7 flex items-center gallery">
                 <a href="./Assets/Home/right-side-of-wrong-book.webp" data-fancybox="gallery"
                     data-caption="Right Side of Wrong Book">
                     <img class="w-[7rem] h-[10.5rem] sm:w-[160px] sm:h-[230px] md:w-[200px] md:h-[290px] lg:w-[235px] lg:h-[340px]"
@@ -186,10 +192,9 @@
 
             <h3 class="font-semibold font-montserrat text-2xl mb-3">Grab your copy today!</h3>
 
-            <a href="./Assets/Home/right-side-of-wrong-book.webp" data-fancybox="gallery"
-                data-caption="Right Side of Wrong Book">
+            <a href="./Assets/Home/right-side-of-wrong-book.webp" class="gallery">
                 <img class="w-[341px] h-[470px] transition-opacity duration-300 ease-in-out hover:opacity-70"
-                    src="./Assets/Home/right-side-of-wrong-book.webp" alt="Right Side of Wrong Book">
+                    src="./Assets/Home/right-side-of-wrong-book.webp">
             </a>
 
 
@@ -255,6 +260,16 @@
 
 
     <script src="./Javascript/index.js"></script>
+
+    <script>
+        window.addEventListener('load', function () {
+            baguetteBox.run('.gallery', {
+
+            });
+
+        });
+    </script>
+
 
 </body>
 

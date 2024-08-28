@@ -61,14 +61,14 @@
 
 }
 
-.mainHomePageBlog footer {
+.mainHomePageBlog article {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-top: 14px;
 }
 
-.mainHomePageBlog footer article {
+.mainHomePageBlog article article {
     font-size: 22px;
     font-weight: 700;
     color: rgb(76, 76, 76);
@@ -77,7 +77,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.mainHomePageBlog footer h5 {
+.mainHomePageBlog article h5 {
     color: rgb(238, 75, 43);
     font-weight: bold;
     font-size: 18px;
@@ -92,14 +92,14 @@
     margin-bottom: 1rem;
 }
 
-.mainHomePageBlog footer h6 a {
+.mainHomePageBlog article h6 a {
     color: #1677aa;
     cursor: pointer;
 }
 
 
 
-.mainHomePageBlog footer p {
+.mainHomePageBlog article p {
     font-size: 22px;
     color: gray;
     margin-top: 4px;
@@ -141,15 +141,15 @@
         font-size: 24px;
     }
 
-    .mainHomePageBlog footer article {
+    .mainHomePageBlog article article {
         font-size: 20px;
     }
 
-    .mainHomePageBlog footer h5 {
+    .mainHomePageBlog article h5 {
         font-size: 15px;
     }
 
-    .mainHomePageBlog footer p {
+    .mainHomePageBlog article p {
         font-size: 18px;
     }
 }
@@ -200,19 +200,21 @@
 
     }
 
-    .mainHomePageBlog footer article {
+    .mainHomePageBlog article article {
         font-size: 18px;
 
     }
 
-    .mainHomePageBlog footer h5 {
+    .mainHomePageBlog article h5 {
         font-size: 18px;
         font-weight: 700;
     }
 
 
 
-    .mainHomePageBlog footer p {
+    .mainHomePageBlog article p {
         font-size: 16px;
     }
 }
+
+/* This class already exists */

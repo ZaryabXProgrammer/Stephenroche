@@ -124,3 +124,21 @@ document.addEventListener("DOMContentLoaded", function () {
     startAutoplay(); // Restart autoplay
   });
 });
+
+//NAVBAR CURRENT PAGE STANDING
+
+document.addEventListener("DOMContentLoaded", function () {
+  const page = window.location.pathname.split("/").pop(); // Get the current page name
+  const navLinks = {
+    "index.html": "home-link",
+    "about.html": "about-link",
+    "DontTell.html": "dont-tell-link",
+    "rightside.html": "right-side-link",
+    "contactus.html": "contact-link",
+  };
+
+  if (navLinks[page]) {
+    document.getElementById(navLinks[page]).classList.remove("text-gray-400");
+    document.getElementById(navLinks[page]).classList.add("text-white");
+  }
+});
