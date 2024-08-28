@@ -130,11 +130,11 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const page = window.location.pathname.split("/").pop(); // Get the current page name
   const navLinks = {
-    "index.html": "home-link",
-    "about.html": "about-link",
-    "DontTell.html": "dont-tell-link",
-    "rightside.html": "right-side-link",
-    "contactus.html": "contact-link",
+    "": "home-link",
+     "about": "about-link",
+     "donttell": "dont-tell-link",
+     "rightside": "right-side-link",
+     "contactus": "contact-link",
   };
 
   if (navLinks[page]) {
