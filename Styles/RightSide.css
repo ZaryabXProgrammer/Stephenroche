@@ -1,7 +1,8 @@
 .lowerBoxRightSide {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+        flex-direction: column;
+        gap: 1px;
+        padding: 0 14px;
 }
 
 .lowerBoxRightSide p {
@@ -11,6 +12,7 @@
 }
 
 .lowerBoxRightSide h3 {
+    padding: 27px 0;
     text-align: start;
     font-size: 28px;
     font-weight: 400;
